@@ -1,0 +1,1220 @@
+{
+  "TipoECF": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto TipoECF"
+  },
+  "eNCF": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto eNCF"
+  },
+  "FechaVencimientoSecuencia": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto FechaVencimientoSecuencia"
+  },
+  "IndicadorNotaCredito": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto IndicadorNotaCredito"
+  },
+  "IndicadorEnvioDiferido": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto IndicadorEnvioDiferido"
+  },
+  "IndicadorMontoGravado": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto IndicadorMontoGravado"
+  },
+  "TipoIngresos": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto TipoIngresos"
+  },
+  "TipoPago": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto TipoPago"
+  },
+  "FechaLimitePago": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto FechaLimitePago"
+  },
+  "TerminoPago": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto TerminoPago"
+  },
+  "FormaPago[1]": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto FormaPago[1]"
+  },
+  "MontoPago[1]": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto MontoPago[1]"
+  },
+  "FormaPago[2]": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto FormaPago[2]"
+  },
+  "MontoPago[2]": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto MontoPago[2]"
+  },
+  "FormaPago[3]": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto FormaPago[3]"
+  },
+  "MontoPago[3]": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto MontoPago[3]"
+  },
+  "FormaPago[4]": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto FormaPago[4]"
+  },
+  "MontoPago[4]": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto MontoPago[4]"
+  },
+  "FormaPago[5]": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto FormaPago[5]"
+  },
+  "MontoPago[5]": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto MontoPago[5]"
+  },
+  "FormaPago[6]": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto FormaPago[6]"
+  },
+  "MontoPago[6]": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto MontoPago[6]"
+  },
+  "FormaPago[7]": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto FormaPago[7]"
+  },
+  "MontoPago[7]": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto MontoPago[7]"
+  },
+  "TipoCuentaPago": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto TipoCuentaPago"
+  },
+  "NumeroCuentaPago": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto NumeroCuentaPago"
+  },
+  "BancoPago": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto BancoPago"
+  },
+  "FechaDesde": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto FechaDesde"
+  },
+  "FechaHasta": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto FechaHasta"
+  },
+  "TotalPaginas": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto TotalPaginas"
+  },
+  "RNCEmisor": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto RNCEmisor"
+  },
+  "RazonSocialEmisor": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto RazonSocialEmisor"
+  },
+  "NombreComercial": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto NombreComercial"
+  },
+  "Sucursal": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto Sucursal"
+  },
+  "DireccionEmisor": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto DireccionEmisor"
+  },
+  "Municipio": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto Municipio"
+  },
+  "Provincia": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto Provincia"
+  },
+  "TelefonoEmisor[1]": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto TelefonoEmisor[1]"
+  },
+  "TelefonoEmisor[2]": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto TelefonoEmisor[2]"
+  },
+  "TelefonoEmisor[3]": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto TelefonoEmisor[3]"
+  },
+  "CorreoEmisor": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto CorreoEmisor"
+  },
+  "WebSite": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto WebSite"
+  },
+  "ActividadEconomica": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto ActividadEconomica"
+  },
+  "CodigoVendedor": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto CodigoVendedor"
+  },
+  "NumeroFacturaInterna": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto NumeroFacturaInterna"
+  },
+  "NumeroPedidoInterno": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto NumeroPedidoInterno"
+  },
+  "ZonaVenta": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto ZonaVenta"
+  },
+  "RutaVenta": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto RutaVenta"
+  },
+  "InformacionAdicionalEmisor": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto InformacionAdicionalEmisor"
+  },
+  "FechaEmision": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto FechaEmision"
+  },
+  "RNCComprador": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto RNCComprador"
+  },
+  "IdentificadorExtranjero": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto IdentificadorExtranjero"
+  },
+  "RazonSocialComprador": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto RazonSocialComprador"
+  },
+  "ContactoComprador": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto ContactoComprador"
+  },
+  "CorreoComprador": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto CorreoComprador"
+  },
+  "DireccionComprador": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto DireccionComprador"
+  },
+  "MunicipioComprador": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto MunicipioComprador"
+  },
+  "ProvinciaComprador": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto ProvinciaComprador"
+  },
+  "PaisComprador": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto PaisComprador"
+  },
+  "FechaEntrega": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto FechaEntrega"
+  },
+  "ContactoEntrega": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto ContactoEntrega"
+  },
+  "DireccionEntrega": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto DireccionEntrega"
+  },
+  "TelefonoAdicional": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto TelefonoAdicional"
+  },
+  "FechaOrdenCompra": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto FechaOrdenCompra"
+  },
+  "NumeroOrdenCompra": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto NumeroOrdenCompra"
+  },
+  "CodigoInternoComprador": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto CodigoInternoComprador"
+  },
+  "ResponsablePago": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto ResponsablePago"
+  },
+  "InformacionAdicionalComprador": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto InformacionAdicionalComprador"
+  },
+  "FechaEmbarque": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto FechaEmbarque"
+  },
+  "NumeroEmbarque": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto NumeroEmbarque"
+  },
+  "NumeroContenedor ": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto NumeroContenedor "
+  },
+  "NumeroReferencia": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto NumeroReferencia"
+  },
+  "NombrePuertoEmbarque": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto NombrePuertoEmbarque"
+  },
+  "CondicionesEntrega": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto CondicionesEntrega"
+  },
+  "TotalFob": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto TotalFob"
+  },
+  "Seguro": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto Seguro"
+  },
+  "Flete": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto Flete"
+  },
+  "OtrosGastos": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto OtrosGastos"
+  },
+  "TotalCif": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto TotalCif"
+  },
+  "RegimenAduanero": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto RegimenAduanero"
+  },
+  "NombrePuertoSalida": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto NombrePuertoSalida"
+  },
+  "NombrePuertoDesembarque": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto NombrePuertoDesembarque"
+  },
+  "PesoBruto": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto PesoBruto"
+  },
+  "PesoNeto": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto PesoNeto"
+  },
+  "UnidadPesoBruto": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto UnidadPesoBruto"
+  },
+  "UnidadPesoNeto": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto UnidadPesoNeto"
+  },
+  "CantidadBulto": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto CantidadBulto"
+  },
+  "UnidadBulto": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto UnidadBulto"
+  },
+  "VolumenBulto": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto VolumenBulto"
+  },
+  "UnidadVolumen": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto UnidadVolumen"
+  },
+  "ViaTransporte": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto ViaTransporte"
+  },
+  "PaisOrigen": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto PaisOrigen"
+  },
+  "DireccionDestino": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto DireccionDestino"
+  },
+  "PaisDestino": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto PaisDestino"
+  },
+  "RNCIdentificacionCompaniaTransportista": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto RNCIdentificacionCompaniaTransportista"
+  },
+  "NombreCompaniaTransportista": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto NombreCompaniaTransportista"
+  },
+  "NumeroViaje": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto NumeroViaje"
+  },
+  "Conductor": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto Conductor"
+  },
+  "DocumentoTransporte": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto DocumentoTransporte"
+  },
+  "Ficha": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto Ficha"
+  },
+  "Placa": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto Placa"
+  },
+  "RutaTransporte": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto RutaTransporte"
+  },
+  "ZonaTransporte": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto ZonaTransporte"
+  },
+  "NumeroAlbaran": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto NumeroAlbaran"
+  },
+  "MontoGravadoTotal": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto MontoGravadoTotal"
+  },
+  "MontoGravadoI1": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto MontoGravadoI1"
+  },
+  "MontoGravadoI2": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto MontoGravadoI2"
+  },
+  "MontoGravadoI3": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto MontoGravadoI3"
+  },
+  "MontoExento": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto MontoExento"
+  },
+  "ITBIS1": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto ITBIS1"
+  },
+  "ITBIS2": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto ITBIS2"
+  },
+  "ITBIS3": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto ITBIS3"
+  },
+  "TotalITBIS": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto TotalITBIS"
+  },
+  "TotalITBIS1": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto TotalITBIS1"
+  },
+  "TotalITBIS2": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto TotalITBIS2"
+  },
+  "TotalITBIS3": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto TotalITBIS3"
+  },
+  "MontoImpuestoAdicional": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto MontoImpuestoAdicional"
+  },
+  "TipoImpuesto[1]": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto TipoImpuesto[1]"
+  },
+  "TasaImpuestoAdicional[1]": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto TasaImpuestoAdicional[1]"
+  },
+  "MontoImpuestoSelectivoConsumoEspecifico[1]": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto MontoImpuestoSelectivoConsumoEspecifico[1]"
+  },
+  "MontoImpuestoSelectivoConsumoAdvalorem[1]": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto MontoImpuestoSelectivoConsumoAdvalorem[1]"
+  },
+  "OtrosImpuestosAdicionales[1]": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto OtrosImpuestosAdicionales[1]"
+  },
+  "TipoImpuesto[2]": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto TipoImpuesto[2]"
+  },
+  "TasaImpuestoAdicional[2]": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto TasaImpuestoAdicional[2]"
+  },
+  "MontoImpuestoSelectivoConsumoEspecifico[2]": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto MontoImpuestoSelectivoConsumoEspecifico[2]"
+  },
+  "MontoImpuestoSelectivoConsumoAdvalorem[2]": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto MontoImpuestoSelectivoConsumoAdvalorem[2]"
+  },
+  "OtrosImpuestosAdicionales[2]": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto OtrosImpuestosAdicionales[2]"
+  },
+  "TipoImpuesto[3]": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto TipoImpuesto[3]"
+  },
+  "TasaImpuestoAdicional[3]": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto TasaImpuestoAdicional[3]"
+  },
+  "MontoImpuestoSelectivoConsumoEspecifico[3]": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto MontoImpuestoSelectivoConsumoEspecifico[3]"
+  },
+  "MontoImpuestoSelectivoConsumoAdvalorem[3]": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto MontoImpuestoSelectivoConsumoAdvalorem[3]"
+  },
+  "OtrosImpuestosAdicionales[3]": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto OtrosImpuestosAdicionales[3]"
+  },
+  "TipoImpuesto[4]": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto TipoImpuesto[4]"
+  },
+  "TasaImpuestoAdicional[4]": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto TasaImpuestoAdicional[4]"
+  },
+  "MontoImpuestoSelectivoConsumoEspecifico[4]": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto MontoImpuestoSelectivoConsumoEspecifico[4]"
+  },
+  "MontoImpuestoSelectivoConsumoAdvalorem[4]": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto MontoImpuestoSelectivoConsumoAdvalorem[4]"
+  },
+  "OtrosImpuestosAdicionales[4]": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto OtrosImpuestosAdicionales[4]"
+  },
+  "MontoTotal": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto MontoTotal"
+  },
+  "MontoNoFacturable": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto MontoNoFacturable"
+  },
+  "MontoPeriodo": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto MontoPeriodo"
+  },
+  "SaldoAnterior": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto SaldoAnterior"
+  },
+  "MontoAvancePago": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto MontoAvancePago"
+  },
+  "ValorPagar": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto ValorPagar"
+  },
+  "TotalITBISRetenido": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto TotalITBISRetenido"
+  },
+  "TotalISRRetencion": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto TotalISRRetencion"
+  },
+  "TotalITBISPercepcion": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto TotalITBISPercepcion"
+  },
+  "TotalISRPercepcion": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto TotalISRPercepcion"
+  },
+  "TipoMoneda": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto TipoMoneda"
+  },
+  "TipoCambio": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto TipoCambio"
+  },
+  "MontoGravadoTotalOtraMoneda": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto MontoGravadoTotalOtraMoneda"
+  },
+  "MontoGravado1OtraMoneda": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto MontoGravado1OtraMoneda"
+  },
+  "MontoGravado2OtraMoneda": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto MontoGravado2OtraMoneda"
+  },
+  "MontoGravado3OtraMoneda": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto MontoGravado3OtraMoneda"
+  },
+  "MontoExentoOtraMoneda": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto MontoExentoOtraMoneda"
+  },
+  "TotalITBISOtraMoneda": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto TotalITBISOtraMoneda"
+  },
+  "TotalITBIS1OtraMoneda": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto TotalITBIS1OtraMoneda"
+  },
+  "TotalITBIS2OtraMoneda": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto TotalITBIS2OtraMoneda"
+  },
+  "TotalITBIS3OtraMoneda": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto TotalITBIS3OtraMoneda"
+  },
+  "MontoImpuestoAdicionalOtraMoneda": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto MontoImpuestoAdicionalOtraMoneda"
+  },
+  "TipoImpuestoOtraMoneda[1]": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto TipoImpuestoOtraMoneda[1]"
+  },
+  "TasaImpuestoAdicionalOtraMoneda[1]": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto TasaImpuestoAdicionalOtraMoneda[1]"
+  },
+  "MontoImpuestoSelectivoConsumoEspecificoOtraMoneda[1]": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto MontoImpuestoSelectivoConsumoEspecificoOtraMoneda[1]"
+  },
+  "MontoImpuestoSelectivoConsumoAdvaloremOtraMoneda[1]": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto MontoImpuestoSelectivoConsumoAdvaloremOtraMoneda[1]"
+  },
+  "OtrosImpuestosAdicionalesOtraMoneda[1]": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto OtrosImpuestosAdicionalesOtraMoneda[1]"
+  },
+  "TipoImpuestoOtraMoneda[2]": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto TipoImpuestoOtraMoneda[2]"
+  },
+  "TasaImpuestoAdicionalOtraMoneda[2]": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto TasaImpuestoAdicionalOtraMoneda[2]"
+  },
+  "MontoImpuestoSelectivoConsumoEspecificoOtraMoneda[2]": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto MontoImpuestoSelectivoConsumoEspecificoOtraMoneda[2]"
+  },
+  "MontoImpuestoSelectivoConsumoAdvaloremOtraMoneda[2]": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto MontoImpuestoSelectivoConsumoAdvaloremOtraMoneda[2]"
+  },
+  "OtrosImpuestosAdicionalesOtraMoneda[2]": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto OtrosImpuestosAdicionalesOtraMoneda[2]"
+  },
+  "TipoImpuestoOtraMoneda[3]": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto TipoImpuestoOtraMoneda[3]"
+  },
+  "TasaImpuestoAdicionalOtraMoneda[3]": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto TasaImpuestoAdicionalOtraMoneda[3]"
+  },
+  "MontoImpuestoSelectivoConsumoEspecificoOtraMoneda[3]": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto MontoImpuestoSelectivoConsumoEspecificoOtraMoneda[3]"
+  },
+  "MontoImpuestoSelectivoConsumoAdvaloremOtraMoneda[3]": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto MontoImpuestoSelectivoConsumoAdvaloremOtraMoneda[3]"
+  },
+  "OtrosImpuestosAdicionalesOtraMoneda[3]": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto OtrosImpuestosAdicionalesOtraMoneda[3]"
+  },
+  "TipoImpuestoOtraMoneda[4]": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto TipoImpuestoOtraMoneda[4]"
+  },
+  "TasaImpuestoAdicionalOtraMoneda[4]": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto TasaImpuestoAdicionalOtraMoneda[4]"
+  },
+  "MontoImpuestoSelectivoConsumoEspecificoOtraMoneda[4]": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto MontoImpuestoSelectivoConsumoEspecificoOtraMoneda[4]"
+  },
+  "MontoImpuestoSelectivoConsumoAdvaloremOtraMoneda[4]": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto MontoImpuestoSelectivoConsumoAdvaloremOtraMoneda[4]"
+  },
+  "OtrosImpuestosAdicionalesOtraMoneda[4]": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto OtrosImpuestosAdicionalesOtraMoneda[4]"
+  },
+  "MontoTotalOtraMoneda": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto MontoTotalOtraMoneda"
+  },
+  "NumeroLineaDoR[1]": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto NumeroLineaDoR[1]"
+  },
+  "TipoAjuste[1]": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto TipoAjuste[1]"
+  },
+  "IndicadorNorma1007[1]": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto IndicadorNorma1007[1]"
+  },
+  "DescripcionDescuentooRecargo[1]": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto DescripcionDescuentooRecargo[1]"
+  },
+  "TipoValor[1]": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto TipoValor[1]"
+  },
+  "ValorDescuentooRecargo[1]": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto ValorDescuentooRecargo[1]"
+  },
+  "MontoDescuentooRecargo[1]": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto MontoDescuentooRecargo[1]"
+  },
+  "MontoDescuentooRecargoOtraMoneda[1]": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto MontoDescuentooRecargoOtraMoneda[1]"
+  },
+  "IndicadorFacturacionDescuentooRecargo[1]": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto IndicadorFacturacionDescuentooRecargo[1]"
+  },
+  "NumeroLineaDoR[2]": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto NumeroLineaDoR[2]"
+  },
+  "TipoAjuste[2]": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto TipoAjuste[2]"
+  },
+  "IndicadorNorma1007[2]": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto IndicadorNorma1007[2]"
+  },
+  "DescripcionDescuentooRecargo[2]": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto DescripcionDescuentooRecargo[2]"
+  },
+  "TipoValor[2]": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto TipoValor[2]"
+  },
+  "ValorDescuentooRecargo[2]": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto ValorDescuentooRecargo[2]"
+  },
+  "MontoDescuentooRecargo[2]": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto MontoDescuentooRecargo[2]"
+  },
+  "MontoDescuentooRecargoOtraMoneda[2]": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto MontoDescuentooRecargoOtraMoneda[2]"
+  },
+  "IndicadorFacturacionDescuentooRecargo[2]": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto IndicadorFacturacionDescuentooRecargo[2]"
+  },
+  "NCFModificado": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto NCFModificado"
+  },
+  "RNCOtroContribuyente": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto RNCOtroContribuyente"
+  },
+  "FechaNCFModificado": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto FechaNCFModificado"
+  },
+  "CodigoModificacion": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto CodigoModificacion"
+  },
+  "RazonModificacion": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto RazonModificacion"
+  }
+}

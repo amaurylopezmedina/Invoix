@@ -1,0 +1,512 @@
+{
+  "table": "FEDetalle",
+  "schema": "dbo",
+  "description": "Detalle del e-CF",
+  "fields": {
+    "NumeroLinea": {
+      "type": "int",
+      "nullable": true,
+      "description": "NumeroLinea"
+    },
+    "RNCEmisor": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "RNCEmisor"
+    },
+    "TipoECF": {
+      "type": "int",
+      "nullable": true,
+      "description": "TipoECF"
+    },
+    "eNCF": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "eNCF"
+    },
+    "TipoCodigo1": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "TipoCodigo1"
+    },
+    "CodigoItem1": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "CodigoItem1"
+    },
+    "TipoCodigo2": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "TipoCodigo2"
+    },
+    "CodigoItem2": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "CodigoItem2"
+    },
+    "TipoCodigo3": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "TipoCodigo3"
+    },
+    "CodigoItem3": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "CodigoItem3"
+    },
+    "TipoCodigo4": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "TipoCodigo4"
+    },
+    "CodigoItem4": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "CodigoItem4"
+    },
+    "TipoCodigo5": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "TipoCodigo5"
+    },
+    "CodigoItem5": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "CodigoItem5"
+    },
+    "IndicadorFacturacion": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "IndicadorFacturacion"
+    },
+    "IndicadorAgenteRetencionoPercepcion": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "IndicadorAgenteRetencionoPercepcion"
+    },
+    "MontoITBISRetenido": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "MontoITBISRetenido"
+    },
+    "MontoISRRetenido": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "MontoISRRetenido"
+    },
+    "NombreItem": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "NombreItem"
+    },
+    "IndicadorBienoServicio": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "IndicadorBienoServicio"
+    },
+    "DescripcionItem": {
+      "type": "varchar",
+      "length": 1000,
+      "nullable": true,
+      "description": "DescripcionItem"
+    },
+    "CantidadItem": {
+      "type": "decimal",
+      "precision": 18,
+      "scale": 2,
+      "nullable": true,
+      "description": "CantidadItem"
+    },
+    "UnidadMedida": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "UnidadMedida"
+    },
+    "CantidadReferencia": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "CantidadReferencia"
+    },
+    "UnidadReferencia": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "UnidadReferencia"
+    },
+    "Subcantidad1": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "Subcantidad1"
+    },
+    "CodigoSubcantidad1": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "CodigoSubcantidad1"
+    },
+    "Subcantidad2": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "Subcantidad2"
+    },
+    "CodigoSubcantidad2": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "CodigoSubcantidad2"
+    },
+    "Subcantidad3": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "Subcantidad3"
+    },
+    "CodigoSubcantidad3": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "CodigoSubcantidad3"
+    },
+    "Subcantidad4": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "Subcantidad4"
+    },
+    "CodigoSubcantidad4": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "CodigoSubcantidad4"
+    },
+    "Subcantidad5": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "Subcantidad5"
+    },
+    "CodigoSubcantidad5": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "CodigoSubcantidad5"
+    },
+    "GradosAlcohol": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "GradosAlcohol"
+    },
+    "PrecioUnitarioReferencia": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "PrecioUnitarioReferencia"
+    },
+    "FechaElaboracion": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "FechaElaboracion"
+    },
+    "FechaVencimientoItem": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "FechaVencimientoItem"
+    },
+    "PesoNetoKilogramo": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "PesoNetoKilogramo"
+    },
+    "PesoNetoMineria": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "PesoNetoMineria"
+    },
+    "TipoAfiliacion": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "TipoAfiliacion"
+    },
+    "Liquidacion": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "Liquidacion"
+    },
+    "PrecioUnitarioItem": {
+      "type": "decimal",
+      "precision": 18,
+      "scale": 2,
+      "nullable": true,
+      "description": "PrecioUnitarioItem"
+    },
+    "DescuentoMonto": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "DescuentoMonto"
+    },
+    "TipoSubDescuento1": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "TipoSubDescuento1"
+    },
+    "SubDescuentoPorcentaje1": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "SubDescuentoPorcentaje1"
+    },
+    "MontoSubDescuento1": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "MontoSubDescuento1"
+    },
+    "TipoSubDescuento2": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "TipoSubDescuento2"
+    },
+    "SubDescuentoPorcentaje2": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "SubDescuentoPorcentaje2"
+    },
+    "MontoSubDescuento2": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "MontoSubDescuento2"
+    },
+    "TipoSubDescuento3": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "TipoSubDescuento3"
+    },
+    "SubDescuentoPorcentaje3": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "SubDescuentoPorcentaje3"
+    },
+    "MontoSubDescuento3": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "MontoSubDescuento3"
+    },
+    "TipoSubDescuento4": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "TipoSubDescuento4"
+    },
+    "SubDescuentoPorcentaje4": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "SubDescuentoPorcentaje4"
+    },
+    "MontoSubDescuento4": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "MontoSubDescuento4"
+    },
+    "TipoSubDescuento5": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "TipoSubDescuento5"
+    },
+    "SubDescuentoPorcentaje5": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "SubDescuentoPorcentaje5"
+    },
+    "MontoSubDescuento5": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "MontoSubDescuento5"
+    },
+    "MontoRecargo": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "MontoRecargo"
+    },
+    "TipoSubRecargo1": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "TipoSubRecargo1"
+    },
+    "SubRecargoPorcentaje1": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "SubRecargoPorcentaje1"
+    },
+    "MontoSubRecargo1": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "MontoSubRecargo1"
+    },
+    "TipoSubRecargo2": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "TipoSubRecargo2"
+    },
+    "SubRecargoPorcentaje2": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "SubRecargoPorcentaje2"
+    },
+    "MontoSubRecargo2": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "MontoSubRecargo2"
+    },
+    "TipoSubRecargo3": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "TipoSubRecargo3"
+    },
+    "SubRecargoPorcentaje3": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "SubRecargoPorcentaje3"
+    },
+    "MontoSubRecargo3": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "MontoSubRecargo3"
+    },
+    "TipoSubRecargo4": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "TipoSubRecargo4"
+    },
+    "SubRecargoPorcentaje4": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "SubRecargoPorcentaje4"
+    },
+    "MontoSubRecargo4": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "MontoSubRecargo4"
+    },
+    "TipoSubRecargo5": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "TipoSubRecargo5"
+    },
+    "SubRecargoPorcentaje5": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "SubRecargoPorcentaje5"
+    },
+    "MontoSubRecargo5": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "MontoSubRecargo5"
+    },
+    "TipoImpuesto1": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "TipoImpuesto1"
+    },
+    "TipoImpuesto2": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "TipoImpuesto2"
+    },
+    "PrecioOtraMoneda": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "PrecioOtraMoneda"
+    },
+    "DescuentoOtraMoneda": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "DescuentoOtraMoneda"
+    },
+    "RecargoOtraMoneda": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "RecargoOtraMoneda"
+    },
+    "MontoItemOtraMoneda": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "MontoItemOtraMoneda"
+    },
+    "MontoItem": {
+      "type": "decimal",
+      "precision": 18,
+      "scale": 2,
+      "nullable": true,
+      "description": "MontoItem"
+    },
+    "tipoecfanterior": {
+      "type": "nvarchar",
+      "length": 2,
+      "nullable": true,
+      "description": "tipoecfanterior"
+    }
+  }
+}

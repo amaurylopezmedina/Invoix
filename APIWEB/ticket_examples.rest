@@ -1,0 +1,418 @@
+###############################################################################
+# SISTEMA DE TICKETS DE INCIDENCIAS - EJEMPLOS DE REQUESTS
+# Archivo: ticket_examples.rest
+# Uso: Abrir en VS Code con extensión REST Client
+###############################################################################
+
+# Variables
+@baseUrl = https://localhost:8001
+@ticketId = REPLACE_WITH_ACTUAL_TICKET_ID
+@attachmentId = REPLACE_WITH_ACTUAL_ATTACHMENT_ID
+
+###############################################################################
+# 1. CREAR TICKET (sin archivos adjuntos)
+###############################################################################
+
+POST {{baseUrl}}/api/tickets
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
+
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="titulo"
+
+Error crítico en módulo de facturación electrónica
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="prioridad"
+
+CRÍTICA
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="categoria"
+
+Funcionalidad
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="empresa"
+
+Empresa Demo S.A.
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="descripcion"
+
+Al intentar generar una factura con NCF tipo 31, el sistema arroja un error 500.
+Pasos para reproducir:
+1. Ingresar al módulo de facturación
+2. Seleccionar cliente
+3. Agregar productos
+4. Hacer clic en "Generar Factura"
+5. Error aparece en consola
+
+El problema comenzó después de la actualización del día 15/10/2025.
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="creado_por"
+
+juan.perez@empresademo.com
+------WebKitFormBoundary7MA4YWxkTrZu0gW--
+
+###############################################################################
+# 2. LISTAR TODOS LOS TICKETS PENDIENTES (ordenados por prioridad)
+###############################################################################
+
+GET {{baseUrl}}/api/tickets
+Content-Type: application/json
+
+###
+
+###############################################################################
+# 3. LISTAR TICKETS CON FILTROS
+###############################################################################
+
+# Tickets de prioridad alta
+GET {{baseUrl}}/api/tickets?prioridad=ALTA
+Content-Type: application/json
+
+###
+
+# Tickets críticos pendientes
+GET {{baseUrl}}/api/tickets?estado=PENDIENTE&prioridad=CRÍTICA
+Content-Type: application/json
+
+###
+
+# Búsqueda por texto
+GET {{baseUrl}}/api/tickets?search=facturación
+Content-Type: application/json
+
+###
+
+# Tickets de una empresa específica
+GET {{baseUrl}}/api/tickets?empresa=Empresa%20Demo
+Content-Type: application/json
+
+###
+
+# Tickets creados por un usuario
+GET {{baseUrl}}/api/tickets?creado_por=juan.perez@empresademo.com
+Content-Type: application/json
+
+###
+
+# Todos los tickets (incluyendo cerrados)
+GET {{baseUrl}}/api/tickets?estado=all&limit=100
+Content-Type: application/json
+
+###
+
+###############################################################################
+# 4. VISTA SIMPLIFICADA (para dashboards)
+###############################################################################
+
+GET {{baseUrl}}/api/tickets?estado=PENDIENTE&list_view=true
+Content-Type: application/json
+
+###
+
+###############################################################################
+# 5. OBTENER DETALLE DE UN TICKET
+###############################################################################
+
+GET {{baseUrl}}/api/tickets/{{ticketId}}
+Content-Type: application/json
+
+###
+
+###############################################################################
+# 6. ACTUALIZAR TICKET - Cambiar estado
+###############################################################################
+
+PUT {{baseUrl}}/api/tickets/{{ticketId}}
+Content-Type: application/json
+
+{
+  "estado": "EN_PROGRESO",
+  "asignado_a": "soporte@empresademo.com"
+}
+
+###
+
+###############################################################################
+# 7. ACTUALIZAR TICKET - Cambiar prioridad
+###############################################################################
+
+PATCH {{baseUrl}}/api/tickets/{{ticketId}}
+Content-Type: application/json
+
+{
+  "prioridad": "CRÍTICA"
+}
+
+###
+
+###############################################################################
+# 8. ACTUALIZAR TICKET - Múltiples campos
+###############################################################################
+
+PUT {{baseUrl}}/api/tickets/{{ticketId}}
+Content-Type: application/json
+
+{
+  "estado": "RESUELTO",
+  "asignado_a": "soporte@empresademo.com",
+  "descripcion": "ACTUALIZACIÓN: El problema fue causado por un timeout en la conexión a DGII. Se incrementó el timeout de 30s a 60s y se agregó retry logic.\n\nDescripción original:\nAl intentar generar una factura con NCF tipo 31, el sistema arroja un error 500."
+}
+
+###
+
+###############################################################################
+# 9. SUBIR ARCHIVOS ADJUNTOS A TICKET EXISTENTE
+###############################################################################
+
+# NOTA: Reemplazar las rutas de archivo con rutas reales en tu sistema
+POST {{baseUrl}}/api/tickets/{{ticketId}}/attachments
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
+
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="attachments"; filename="screenshot.png"
+Content-Type: image/png
+
+< C:\Users\USERNAME\Desktop\screenshot.png
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="attachments"; filename="error.log"
+Content-Type: text/plain
+
+< C:\Users\USERNAME\Desktop\error.log
+------WebKitFormBoundary7MA4YWxkTrZu0gW--
+
+###
+
+###############################################################################
+# 10. DESCARGAR ARCHIVO ADJUNTO
+###############################################################################
+
+GET {{baseUrl}}/api/tickets/{{ticketId}}/attachments/{{attachmentId}}
+
+###
+
+###############################################################################
+# 11. ELIMINAR ARCHIVO ADJUNTO
+###############################################################################
+
+DELETE {{baseUrl}}/api/tickets/{{ticketId}}/attachments/{{attachmentId}}
+Content-Type: application/json
+
+###
+
+###############################################################################
+# 12. ELIMINAR TICKET COMPLETO
+###############################################################################
+
+DELETE {{baseUrl}}/api/tickets/{{ticketId}}
+Content-Type: application/json
+
+###
+
+###############################################################################
+# 13. OBTENER ESTADÍSTICAS
+###############################################################################
+
+GET {{baseUrl}}/api/tickets/stats
+Content-Type: application/json
+
+###
+
+###############################################################################
+# 14. OBTENER CONFIGURACIÓN DEL SISTEMA
+###############################################################################
+
+GET {{baseUrl}}/api/tickets/config
+Content-Type: application/json
+
+###
+
+###############################################################################
+# EJEMPLOS AVANZADOS
+###############################################################################
+
+# Paginación - Primera página
+GET {{baseUrl}}/api/tickets?limit=10&offset=0
+Content-Type: application/json
+
+###
+
+# Paginación - Segunda página
+GET {{baseUrl}}/api/tickets?limit=10&offset=10
+Content-Type: application/json
+
+###
+
+# Ordenar por fecha de creación (más recientes primero)
+GET {{baseUrl}}/api/tickets?sort=created_at:desc
+Content-Type: application/json
+
+###
+
+# Ordenar por prioridad ascendente y luego por fecha
+GET {{baseUrl}}/api/tickets?sort=priority_score:asc,created_at:desc
+Content-Type: application/json
+
+###
+
+# Combinación compleja: Tickets de una categoría, en progreso, ordenados por prioridad
+GET {{baseUrl}}/api/tickets?categoria=Funcionalidad&estado=EN_PROGRESO&sort=priority_score:desc
+Content-Type: application/json
+
+###
+
+# Tickets con descripción completa (no truncada)
+GET {{baseUrl}}/api/tickets?detail=true
+Content-Type: application/json
+
+###
+
+###############################################################################
+# EJEMPLOS DE CASOS DE USO REALES
+###############################################################################
+
+# CASO 1: Dashboard de soporte - Ver tickets pendientes críticos
+GET {{baseUrl}}/api/tickets?estado=PENDIENTE&prioridad=CRÍTICA&list_view=true
+Content-Type: application/json
+
+###
+
+# CASO 2: Reportes - Todos los tickets resueltos en el último mes
+GET {{baseUrl}}/api/tickets?estado=RESUELTO&limit=200
+Content-Type: application/json
+
+###
+
+# CASO 3: Asignar tickets automáticamente
+PUT {{baseUrl}}/api/tickets/{{ticketId}}
+Content-Type: application/json
+
+{
+  "estado": "EN_PROGRESO",
+  "asignado_a": "bot-auto-asignador"
+}
+
+###
+
+# CASO 4: Cerrar ticket masivamente (requiere iteración en cliente)
+PUT {{baseUrl}}/api/tickets/{{ticketId}}
+Content-Type: application/json
+
+{
+  "estado": "CERRADO"
+}
+
+###
+
+###############################################################################
+# PRUEBAS DE VALIDACIÓN
+###############################################################################
+
+# ERROR: Título muy corto (debe fallar)
+POST {{baseUrl}}/api/tickets
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
+
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="titulo"
+
+Bug
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="prioridad"
+
+ALTA
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="categoria"
+
+Error
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="descripcion"
+
+Descripción del error
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="creado_por"
+
+test@test.com
+------WebKitFormBoundary7MA4YWxkTrZu0gW--
+
+###
+
+# ERROR: Prioridad inválida (debe fallar)
+POST {{baseUrl}}/api/tickets
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
+
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="titulo"
+
+Ticket de prueba con prioridad inválida
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="prioridad"
+
+SUPER_URGENTE
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="categoria"
+
+Test
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="descripcion"
+
+Prueba de validación
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="creado_por"
+
+test@test.com
+------WebKitFormBoundary7MA4YWxkTrZu0gW--
+
+###
+
+# ERROR: Campos obligatorios faltantes (debe fallar)
+POST {{baseUrl}}/api/tickets
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
+
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="titulo"
+
+Solo título sin otros campos obligatorios
+------WebKitFormBoundary7MA4YWxkTrZu0gW--
+
+###
+
+###############################################################################
+# SCRIPTS POWERSHELL PARA PRUEBAS CON ARCHIVOS REALES
+###############################################################################
+
+<#
+# Script PowerShell para crear ticket con archivos
+
+$baseUrl = "https://localhost:8001"
+$boundary = [System.Guid]::NewGuid().ToString()
+
+$bodyLines = @(
+    "--$boundary",
+    "Content-Disposition: form-data; name=`"titulo`"",
+    "",
+    "Error en sistema de facturación",
+    "--$boundary",
+    "Content-Disposition: form-data; name=`"prioridad`"",
+    "",
+    "ALTA",
+    "--$boundary",
+    "Content-Disposition: form-data; name=`"categoria`"",
+    "",
+    "Bug",
+    "--$boundary",
+    "Content-Disposition: form-data; name=`"descripcion`"",
+    "",
+    "Error al procesar factura tipo 31",
+    "--$boundary",
+    "Content-Disposition: form-data; name=`"creado_por`"",
+    "",
+    "usuario@empresa.com",
+    "--$boundary--"
+)
+
+$body = $bodyLines -join "`r`n"
+
+$headers = @{
+    "Content-Type" = "multipart/form-data; boundary=$boundary"
+}
+
+Invoke-RestMethod -Uri "$baseUrl/api/tickets" -Method Post -Body $body -Headers $headers
+#>

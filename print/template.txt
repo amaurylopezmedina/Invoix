@@ -1,0 +1,51 @@
+
+@C|{company_name} 
+
+
+                   .                   
+{company_address}
+            TEL: 809-8750704            
+             RNC: {company_rnc}             
+
+NCF......: {invoice_number}
+{tipo_ncf}
+@VALIDO HASTA EL {fecha_vencimiento}
+----------------------------------------
+           FACTURA A CREDITO           
+----------------------------------------
+FACTURA..: 
+FECHA....: {fecha}
+CONDICION: VENTA A CREDITO 00 DIAS 
+CLIENTE..: {numero_cliente}
+NOMBRE...: {client_name}
+RNC......: {client_rnc}
+TELEFONO.: {numero_telefono}
+VENDEDOR.: {vendedor}
+CAJERO...: 
+----------------------------------------
+CANTIDAD  DESCRIPCION
+@D|PRECIO     ITBIS     IMPORTE
+----------------------------------------
+{products_section}
+----------------------------------------
+           SUB-TOTAL RD:        {subtotal}
+           Descuento RD:        {total_discount}
+             + ITBIS RD:        {total_itbis}
+        NETO A PAGAR RD:        {total}
+ 
+ 
+OBSERVACION:                            
+{nota}                                  
+ 
+{qr_image}
+codigo de seguridad: {security_code}
+ 
+           {realizado_por}
+           ------------------           
+             Realizado por             
+ 
+ 
+           ------------------           
+              Recibido por              
+          02-12-2024 09:35:37          
+     !!! GRACIAS POR SU COMPRA !!!   

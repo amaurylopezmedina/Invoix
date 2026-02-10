@@ -1,0 +1,482 @@
+{
+  "NumeroLinea": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto NumeroLinea[1]"
+  },
+  "TipoCodigo1": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto TipoCodigo[1][1]"
+  },
+  "CodigoItem1": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto CodigoItem[1][1]"
+  },
+  "TipoCodigo2": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto TipoCodigo[1][2]"
+  },
+  "CodigoItem2": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto CodigoItem[1][2]"
+  },
+  "TipoCodigo3": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto TipoCodigo[1][3]"
+  },
+  "CodigoItem3": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto CodigoItem[1][3]"
+  },
+  "TipoCodigo4": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto TipoCodigo[1][4]"
+  },
+  "CodigoItem4": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto CodigoItem[1][4]"
+  },
+  "TipoCodigo5": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto TipoCodigo[1][5]"
+  },
+  "CodigoItem5": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto CodigoItem[1][5]"
+  },
+  "IndicadorFacturacion": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto IndicadorFacturacion[1]"
+  },
+  "IndicadorAgenteRetencionoPercepcion": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto IndicadorAgenteRetencionoPercepcion[1]"
+  },
+  "MontoITBISRetenido": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto MontoITBISRetenido[1]"
+  },
+  "MontoISRRetenido": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto MontoISRRetenido[1]"
+  },
+  "NombreItem": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto NombreItem[1]"
+  },
+  "IndicadorBienoServicio": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto IndicadorBienoServicio[1]"
+  },
+  "DescripcionItem": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto DescripcionItem[1]"
+  },
+  "CantidadItem": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto CantidadItem[1]"
+  },
+  "UnidadMedida": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto UnidadMedida[1]"
+  },
+  "CantidadReferencia": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto CantidadReferencia[1]"
+  },
+  "UnidadReferencia": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto UnidadReferencia[1]"
+  },
+  "Subcantidad1": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto Subcantidad[1][1]"
+  },
+  "CodigoSubcantidad1": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto CodigoSubcantidad[1][1]"
+  },
+  "Subcantidad2": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto Subcantidad[1][2]"
+  },
+  "CodigoSubcantidad2": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto CodigoSubcantidad[1][2]"
+  },
+  "Subcantidad3": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto Subcantidad[1][3]"
+  },
+  "CodigoSubcantidad3": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto CodigoSubcantidad[1][3]"
+  },
+  "Subcantidad4": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto Subcantidad[1][4]"
+  },
+  "CodigoSubcantidad4": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto CodigoSubcantidad[1][4]"
+  },
+  "Subcantidad5": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto Subcantidad[1][5]"
+  },
+  "CodigoSubcantidad5": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto CodigoSubcantidad[1][5]"
+  },
+  "GradosAlcohol": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto GradosAlcohol[1]"
+  },
+  "PrecioUnitarioReferencia": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto PrecioUnitarioReferencia[1]"
+  },
+  "FechaElaboracion": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto FechaElaboracion[1]"
+  },
+  "FechaVencimientoItem": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto FechaVencimientoItem[1]"
+  },
+  "PesoNetoKilogramo": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto PesoNetoKilogramo[1]"
+  },
+  "PesoNetoMineria": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto PesoNetoMineria[1]"
+  },
+  "TipoAfiliacion": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto TipoAfiliacion[1]"
+  },
+  "Liquidacion": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto Liquidacion[1]"
+  },
+  "PrecioUnitarioItem": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto PrecioUnitarioItem[1]"
+  },
+  "DescuentoMonto": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto DescuentoMonto[1]"
+  },
+  "TipoSubDescuento1": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto TipoSubDescuento[1][1]"
+  },
+  "SubDescuentoPorcentaje1": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto SubDescuentoPorcentaje[1][1]"
+  },
+  "MontoSubDescuento1": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto MontoSubDescuento[1][1]"
+  },
+  "TipoSubDescuento2": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto TipoSubDescuento[1][2]"
+  },
+  "SubDescuentoPorcentaje2": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto SubDescuentoPorcentaje[1][2]"
+  },
+  "MontoSubDescuento2": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto MontoSubDescuento[1][2]"
+  },
+  "TipoSubDescuento3": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto TipoSubDescuento[1][3]"
+  },
+  "SubDescuentoPorcentaje3": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto SubDescuentoPorcentaje[1][3]"
+  },
+  "MontoSubDescuento3": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto MontoSubDescuento[1][3]"
+  },
+  "TipoSubDescuento4": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto TipoSubDescuento[1][4]"
+  },
+  "SubDescuentoPorcentaje4": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto SubDescuentoPorcentaje[1][4]"
+  },
+  "MontoSubDescuento4": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto MontoSubDescuento[1][4]"
+  },
+  "TipoSubDescuento5": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto TipoSubDescuento[1][5]"
+  },
+  "SubDescuentoPorcentaje5": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto SubDescuentoPorcentaje[1][5]"
+  },
+  "MontoSubDescuento5": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto MontoSubDescuento[1][5]"
+  },
+  "MontoRecargo": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto RecargoMonto[1]"
+  },
+  "TipoSubRecargo1": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto TipoSubRecargo[1][1]"
+  },
+  "SubRecargoPorcentaje1": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto SubRecargoPorcentaje[1][1]"
+  },
+  "MontoSubRecargo1": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto MontosubRecargo[1][1]"
+  },
+  "TipoSubRecargo2": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto TipoSubRecargo[1][2]"
+  },
+  "SubRecargoPorcentaje2": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto SubRecargoPorcentaje[1][2]"
+  },
+  "MontoSubRecargo2": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto MontosubRecargo[1][2]"
+  },
+  "TipoSubRecargo3": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto TipoSubRecargo[1][3]"
+  },
+  "SubRecargoPorcentaje3": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto SubRecargoPorcentaje[1][3]"
+  },
+  "MontoSubRecargo3": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto MontosubRecargo[1][3]"
+  },
+  "TipoSubRecargo4": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto TipoSubRecargo[1][4]"
+  },
+  "SubRecargoPorcentaje4": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto SubRecargoPorcentaje[1][4]"
+  },
+  "MontoSubRecargo4": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto MontosubRecargo[1][4]"
+  },
+  "TipoSubRecargo5": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto TipoSubRecargo[1][5]"
+  },
+  "SubRecargoPorcentaje5": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto SubRecargoPorcentaje[1][5]"
+  },
+  "MontoSubRecargo5": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto MontosubRecargo[1][5]"
+  },
+  "TipoImpuesto1": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto TipoImpuesto[1][1]"
+  },
+  "TipoImpuesto2": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto TipoImpuesto[1][2]"
+  },
+  "PrecioOtraMoneda": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto PrecioOtraMoneda[1]"
+  },
+  "DescuentoOtraMoneda": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto DescuentoOtraMoneda[1]"
+  },
+  "RecargoOtraMoneda": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto RecargoOtraMoneda[1]"
+  },
+  "MontoItemOtraMoneda": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto MontoItemOtraMoneda[1]"
+  },
+  "MontoItem": {
+    "type": "NVARCHAR",
+    "length": 100,
+    "nullable": true,
+    "description": "Campo de texto MontoItem[1]"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "table": "FEAmbiente",
+  "schema": "dbo",
+  "description": "Tabla de ambientes para facturación electrónica (DEV / CERT / PRD)",
+  "fields": {
+    "ambiente": {
+      "type": "int",
+      "nullable": true,
+      "identity": false,
+      "primary_key": false,
+      "default": null,
+      "description": "Código del ambiente (ej: 0=DEV, 1=CERT, 2=PRD)"
+    },
+    "descrip": {
+      "type": "varchar(255)",
+      "nullable": true,
+      "identity": false,
+      "primary_key": false,
+      "default": null,
+      "description": "Descripción del ambiente"
+    },
+    "ruta": {
+      "type": "varchar(255)",
+      "nullable": true,
+      "identity": false,
+      "primary_key": false,
+      "default": null,
+      "description": "Ruta base o URL asociada al ambiente"
+    }
+  }
+}

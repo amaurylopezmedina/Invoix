@@ -1,0 +1,20 @@
+{company_name}
+{company_address}
+RNC: {company_rnc}
+---------------------------------------
+Invoice: {invoice_number}
+Issue Date: {invoice_date}
+Client: {client_name}
+---------------------------------------
+Qty  Description   Price    Value
+{products_section}
+---------------------------------------
+Subtotal: {subtotal}
+Discount: {total_discount}
+ITBIS: {total_itbis}
+Total: {total}
+---------------------------------------
+{qr_image}
+Security Code: {security_code}
+Signature Date: {signature_date}
+Thank you for your business!

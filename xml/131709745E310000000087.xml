@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ECF>
+	<Encabezado>
+		<Version>1.0</Version>
+		<IdDoc>
+			<TipoeCF>31</TipoeCF>
+			<eNCF>E310000000087</eNCF>
+			<FechaVencimientoSecuencia>31-12-2025</FechaVencimientoSecuencia>
+			<IndicadorMontoGravado>0</IndicadorMontoGravado>
+			<TipoIngresos>01</TipoIngresos>
+			<TipoPago>2</TipoPago>
+			<FechaLimitePago>16-02-2025</FechaLimitePago>
+			<TerminoPago>30  Dias</TerminoPago>
+			<TablaFormasPago>
+				<FormaDePago>
+					<FormaPago>4</FormaPago>
+					<MontoPago>831870.00</MontoPago>
+				</FormaDePago>
+			</TablaFormasPago>
+		</IdDoc>
+		<Emisor>
+			<RNCEmisor>131709745</RNCEmisor>
+			<RazonSocialEmisor>ASESORIA Y SISTEMAS EMPRESARIALES ASESYS, SRL</RazonSocialEmisor>
+			<NombreComercial>ASESORIA Y SISTEMAS EMPRESARIALES ASESYS, SRL</NombreComercial>
+			<DireccionEmisor>CALLE HOSTOS NO. 19</DireccionEmisor>
+			<Municipio>010101</Municipio>
+			<Provincia>010000</Provincia>
+			<TablaTelefonoEmisor>
+				<TelefonoEmisor>809-723-8586</TelefonoEmisor>
+				<TelefonoEmisor>809-875-0704</TelefonoEmisor>
+			</TablaTelefonoEmisor>
+			<CorreoEmisor>info@asesys.com.do</CorreoEmisor>
+			<WebSite>www.asesys.com.do</WebSite>
+			<ActividadEconomica>INSTALACIONES DE PROCESAMIENTO DE DATOS Y SERVICIOS DE SOPORTE RELACIONADOS</ActividadEconomica>
+			<FechaEmision>17-01-2025</FechaEmision>
+		</Emisor>
+		<Comprador>
+			<RNCComprador>406010953</RNCComprador>
+			<RazonSocialComprador>COOPERATIVA DE CRIADORES DEL CIBAO INC (COOPCIBAO
+)</RazonSocialComprador>
+		</Comprador>
+		<Totales>
+			<MontoExento>831870.00</MontoExento>
+			<TotalITBIS>0.00</TotalITBIS>
+			<MontoTotal>831870.00</MontoTotal>
+			<ValorPagar>831870.00</ValorPagar>
+		</Totales>
+		<OtraMoneda>
+			<TipoMoneda>USD</TipoMoneda>
+			<TipoCambio>61.6200</TipoCambio>
+			<MontoGravadoTotalOtraMoneda>0.00</MontoGravadoTotalOtraMoneda>
+			<MontoGravado1OtraMoneda>0.00</MontoGravado1OtraMoneda>
+			<MontoGravado2OtraMoneda>0.00</MontoGravado2OtraMoneda>
+			<MontoGravado3OtraMoneda>0.00</MontoGravado3OtraMoneda>
+			<MontoExentoOtraMoneda>13500.00</MontoExentoOtraMoneda>
+			<TotalITBISOtraMoneda>0.00</TotalITBISOtraMoneda>
+			<TotalITBIS1OtraMoneda>0.00</TotalITBIS1OtraMoneda>
+			<TotalITBIS2OtraMoneda>0.00</TotalITBIS2OtraMoneda>
+			<TotalITBIS3OtraMoneda>0.00</TotalITBIS3OtraMoneda>
+			<MontoTotalOtraMoneda>13500.00</MontoTotalOtraMoneda>
+		</OtraMoneda>
+	</Encabezado>
+	<DetallesItems>
+		<Item>
+			<NumeroLinea>1</NumeroLinea>
+			<IndicadorFacturacion>4</IndicadorFacturacion>
+			<NombreItem>LICENCIA INTEGRACION, INSTALACION, ENTRENAMIENTO Y PRUEBAS DE CERTIFICACION EN L</NombreItem>
+			<IndicadorBienoServicio>1</IndicadorBienoServicio>
+			<CantidadItem>1.00</CantidadItem>
+			<PrecioUnitarioItem>831870.0000</PrecioUnitarioItem>
+			<MontoItem>831870.00</MontoItem>
+		</Item>
+	</DetallesItems>
+	<FechaHoraFirma>17-01-2025 15:17:20</FechaHoraFirma>
+	<Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+		<SignedInfo>
+			<CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+			<SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+			<Reference URI="">
+				<Transforms>
+					<Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+				</Transforms>
+				<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+				<DigestValue>MXZBl80O120lNUxQyCd2g1a9Rsc0uWzbnjIhAIiQulI=</DigestValue>
+			</Reference>
+		</SignedInfo>
+		<SignatureValue>qOk42d1pXLQSJ0EZ0B6soPbXYsXCzLeDEVrjaPm/exUXjILdmV4phemL0dI2FuM4+kCy9w1wvhjTY88aoEhnpwUBgBSy3FXpBVJRGgOssvA5EUgP3LOQn86tC/fjD+3Wq4OiFlPndkGdBWEhc0Ct9JGeAAk2vHzHq3px5zLdWoYw0n+91kImufIky9cGZWjSPH55LEnZaeFq2RmcHYY4/Rqvnp1PSbSQDMojCwnOCAPFLvuRx42iAF4c/GJ0x1cFUfqCX/j8xJmMuzt4WdAQYVmAhDCXHehwoMyL987y9qhpsweBA+nndYUAQ4TwiZJQSWrKoyctNtt5eJJLRy56NA==</SignatureValue>
+		<KeyInfo>
+			<X509Data>
+				<X509Certificate>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</X509Certificate>
+			</X509Data>
+		</KeyInfo>
+	</Signature>
+</ECF>

@@ -1,0 +1,6 @@
+{
+    "port_rute": 8001,
+    "ssl_certfile_rute": "C:/cert/certificado.pem",
+    "ssl_keyfile_rute": "C:/cert/llave_privada.pem"
+
+}

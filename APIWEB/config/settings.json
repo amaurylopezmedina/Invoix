@@ -1,0 +1,11 @@
+{
+  "database": "CERT",
+  "driver": "ODBC Driver 17 for SQL Server",
+  "password_set": true,
+  "server": "localhost",
+  "table_detalle_prefix": "FEDetalle",
+  "table_encabezado": "FEEncabezado",
+  "user": "SISTEMA",
+  "validate_duplicates": true,
+  "password": "@@sistema"
+}

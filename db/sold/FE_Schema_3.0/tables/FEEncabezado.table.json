@@ -1,0 +1,745 @@
+{
+  "table": "FEEncabezado",
+  "schema": "dbo",
+  "description": "Encabezado del e-CF",
+  "fields": {
+    "TipoECF": {
+      "type": "int",
+      "nullable": true,
+      "description": "TipoECF"
+    },
+    "eNCF": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "eNCF"
+    },
+    "FechaVencimientoSecuencia": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "FechaVencimientoSecuencia"
+    },
+    "IndicadorNotaCredito": {
+      "type": "bit",
+      "nullable": true,
+      "description": "IndicadorNotaCredito"
+    },
+    "IndicadorEnvioDiferido": {
+      "type": "bit",
+      "nullable": true,
+      "description": "IndicadorEnvioDiferido"
+    },
+    "IndicadorMontoGravado": {
+      "type": "bit",
+      "nullable": true,
+      "description": "IndicadorMontoGravado"
+    },
+    "TipoIngresos": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "TipoIngresos"
+    },
+    "TipoPago": {
+      "type": "int",
+      "nullable": true,
+      "description": "TipoPago"
+    },
+    "FechaLimitePago": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "FechaLimitePago"
+    },
+    "TerminoPago": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "TerminoPago"
+    },
+    "FormaPago1": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "FormaPago1"
+    },
+    "MontoPago1": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "MontoPago1"
+    },
+    "FormaPago2": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "FormaPago2"
+    },
+    "MontoPago2": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "MontoPago2"
+    },
+    "FormaPago3": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "FormaPago3"
+    },
+    "MontoPago3": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "MontoPago3"
+    },
+    "FormaPago4": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "FormaPago4"
+    },
+    "MontoPago4": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "MontoPago4"
+    },
+    "FormaPago5": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "FormaPago5"
+    },
+    "MontoPago5": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "MontoPago5"
+    },
+    "FormaPago6": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "FormaPago6"
+    },
+    "MontoPago6": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "MontoPago6"
+    },
+    "FormaPago7": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "FormaPago7"
+    },
+    "MontoPago7": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "MontoPago7"
+    },
+    "TipoCuentaPago": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "TipoCuentaPago"
+    },
+    "NumeroCuentaPago": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "NumeroCuentaPago"
+    },
+    "BancoPago": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "BancoPago"
+    },
+    "FechaDesde": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "FechaDesde"
+    },
+    "FechaHasta": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "FechaHasta"
+    },
+    "TotalPaginas": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "TotalPaginas"
+    },
+    "RNCEmisor": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "RNCEmisor"
+    },
+    "RazonSocialEmisor": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "RazonSocialEmisor"
+    },
+    "NombreComercial": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "NombreComercial"
+    },
+    "Sucursal": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "Sucursal"
+    },
+    "DireccionEmisor": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "DireccionEmisor"
+    },
+    "Municipio": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "Municipio"
+    },
+    "Provincia": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "Provincia"
+    },
+    "TelefonoEmisor1": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "TelefonoEmisor1"
+    },
+    "TelefonoEmisor2": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "TelefonoEmisor2"
+    },
+    "TelefonoEmisor3": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "TelefonoEmisor3"
+    },
+    "CorreoEmisor": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "CorreoEmisor"
+    },
+    "WebSite": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "WebSite"
+    },
+    "ActividadEconomica": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "ActividadEconomica"
+    },
+    "CodigoVendedor": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "CodigoVendedor"
+    },
+    "NumeroFacturaInterna": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "NumeroFacturaInterna"
+    },
+    "NumeroPedidoInterno": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "NumeroPedidoInterno"
+    },
+    "ZonaVenta": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "ZonaVenta"
+    },
+    "RutaVenta": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "RutaVenta"
+    },
+    "InformacionAdicionalEmisor": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "InformacionAdicionalEmisor"
+    },
+    "FechaEmision": {
+      "type": "date",
+      "nullable": true,
+      "description": "FechaEmision"
+    },
+    "RNCComprador": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "RNCComprador"
+    },
+    "IdentificadorExtranjero": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "IdentificadorExtranjero"
+    },
+    "RazonSocialComprador": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "RazonSocialComprador"
+    },
+    "ContactoComprador": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "ContactoComprador"
+    },
+    "CorreoComprador": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "CorreoComprador"
+    },
+    "DireccionComprador": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "DireccionComprador"
+    },
+    "MunicipioComprador": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "MunicipioComprador"
+    },
+    "ProvinciaComprador": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "ProvinciaComprador"
+    },
+    "PaisComprador": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "PaisComprador"
+    },
+    "FechaEntrega": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "FechaEntrega"
+    },
+    "ContactoEntrega": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "ContactoEntrega"
+    },
+    "DireccionEntrega": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "DireccionEntrega"
+    },
+    "TelefonoAdicional": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "TelefonoAdicional"
+    },
+    "FechaOrdenCompra": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "FechaOrdenCompra"
+    },
+    "NumeroOrdenCompra": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "NumeroOrdenCompra"
+    },
+    "CodigoInternoComprador": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "CodigoInternoComprador"
+    },
+    "ResponsablePago": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "ResponsablePago"
+    },
+    "Informacionadicionalcomprador": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "Informacionadicionalcomprador"
+    },
+    "FechaEmbarque": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "FechaEmbarque"
+    },
+    "NumeroEmbarque": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "NumeroEmbarque"
+    },
+    "NumeroContenedor": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "NumeroContenedor"
+    },
+    "NumeroReferencia": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "NumeroReferencia"
+    },
+    "NombrePuertoEmbarque": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "NombrePuertoEmbarque"
+    },
+    "CondicionesEntrega": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "CondicionesEntrega"
+    },
+    "TotalFob": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "TotalFob"
+    },
+    "Seguro": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "Seguro"
+    },
+    "Flete": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "Flete"
+    },
+    "OtrosGastos": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "OtrosGastos"
+    },
+    "TotalCif": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "TotalCif"
+    },
+    "RegimenAduanero": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "RegimenAduanero"
+    },
+    "NombrePuertoSalida": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "NombrePuertoSalida"
+    },
+    "NombrePuertoDesembarque": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "NombrePuertoDesembarque"
+    },
+    "PesoBruto": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "PesoBruto"
+    },
+    "PesoNeto": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "PesoNeto"
+    },
+    "UnidadPesoBruto": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "UnidadPesoBruto"
+    },
+    "UnidadPesoNeto": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "UnidadPesoNeto"
+    },
+    "CantidadBulto": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "CantidadBulto"
+    },
+    "UnidadBulto": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "UnidadBulto"
+    },
+    "VolumenBulto": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "VolumenBulto"
+    },
+    "UnidadVolumen": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "UnidadVolumen"
+    },
+    "ViaTransporte": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "ViaTransporte"
+    },
+    "PaisOrigen": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "PaisOrigen"
+    },
+    "DireccionDestino": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "DireccionDestino"
+    },
+    "PaisDestino": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "PaisDestino"
+    },
+    "RNCIdentificacionCompaniaTransportista": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "RNCIdentificacionCompaniaTransportista"
+    },
+    "NombreCompaniaTransportista": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "NombreCompaniaTransportista"
+    },
+    "NumeroViaje": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "NumeroViaje"
+    },
+    "Conductor": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "Conductor"
+    },
+    "DocumentoTransporte": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "DocumentoTransporte"
+    },
+    "Ficha": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "Ficha"
+    },
+    "Placa": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "Placa"
+    },
+    "RutaTransporte": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "RutaTransporte"
+    },
+    "ZonaTransporte": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "ZonaTransporte"
+    },
+    "NumeroAlbaran": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "NumeroAlbaran"
+    },
+    "MontoGravadoTotal": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "MontoGravadoTotal"
+    },
+    "MontoExento": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "MontoExento"
+    },
+    "TotalITBIS": {
+      "type": "decimal",
+      "precision": 18,
+      "scale": 2,
+      "nullable": true,
+      "description": "TotalITBIS"
+    },
+    "MontoTotal": {
+      "type": "decimal",
+      "precision": 18,
+      "scale": 2,
+      "nullable": true,
+      "description": "MontoTotal"
+    },
+    "TipoMoneda": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "TipoMoneda"
+    },
+    "TipoCambio": {
+      "type": "decimal",
+      "precision": 18,
+      "scale": 2,
+      "nullable": true,
+      "description": "TipoCambio"
+    },
+    "Trackid": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "Trackid"
+    },
+    "FechaFirma": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "FechaFirma"
+    },
+    "CodigoSeguridad": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "CodigoSeguridad"
+    },
+    "EstadoFiscal": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "EstadoFiscal"
+    },
+    "URLQR": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "URLQR"
+    },
+    "fechacreacion": {
+      "type": "datetime",
+      "nullable": true,
+      "description": "fechacreacion"
+    },
+    "EstadoImpresion": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "EstadoImpresion"
+    },
+    "ConteoImpresiones": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "ConteoImpresiones"
+    },
+    "transferencia": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "transferencia"
+    },
+    "Modificado": {
+      "type": "datetime",
+      "nullable": true,
+      "description": "Modificado"
+    },
+    "ResultadoEstadoFiscal": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "ResultadoEstadoFiscal"
+    },
+    "MontoDGII": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "MontoDGII"
+    },
+    "MontoITBISDGII": {
+      "type": "varchar",
+      "length": 255,
+      "nullable": true,
+      "description": "MontoITBISDGII"
+    },
+    "Enviado": {
+      "type": "int",
+      "nullable": true,
+      "description": "Enviado"
+    }
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "table": "AprobacionComercial",
+  "schema": "dbo",
+  "description": "Tabla AprobacionComercial importada desde SQL",
+  "fields": {
+    "id": {
+      "type": "int",
+      "nullable": false,
+      "identity": true,
+      "default": null,
+      "description": "Identificador autonumérico de AprobacionComercial"
+    },
+    "RNCEmisor": {
+      "type": "char(11)",
+      "nullable": true,
+      "identity": false,
+      "default": null,
+      "description": "Campo RNCEmisor de AprobacionComercial"
+    },
+    "eNCF": {
+      "type": "char(15)",
+      "nullable": true,
+      "identity": false,
+      "default": null,
+      "description": "Campo eNCF de AprobacionComercial"
+    },
+    "FechaEmision": {
+      "type": "datetime",
+      "nullable": true,
+      "identity": false,
+      "default": null,
+      "description": "Campo FechaEmision de AprobacionComercial"
+    },
+    "MontoTotal": {
+      "type": "decimal(18,2)",
+      "nullable": true,
+      "identity": false,
+      "default": null,
+      "description": "Campo MontoTotal de AprobacionComercial"
+    },
+    "RNCComprador": {
+      "type": "varchar(11)",
+      "nullable": true,
+      "identity": false,
+      "default": null,
+      "description": "Campo RNCComprador de AprobacionComercial"
+    },
+    "Estado": {
+      "type": "int",
+      "nullable": true,
+      "identity": false,
+      "default": null,
+      "description": "Campo Estado de AprobacionComercial"
+    },
+    "DetalleMotivoRechazo": {
+      "type": "char(250)",
+      "nullable": true,
+      "identity": false,
+      "default": null,
+      "description": "Campo DetalleMotivoRechazo de AprobacionComercial"
+    },
+    "FechaHoraAprobacionComercial": {
+      "type": "datetime",
+      "nullable": true,
+      "identity": false,
+      "default": null,
+      "description": "Campo FechaHoraAprobacionComercial de AprobacionComercial"
+    },
+    "Comentario": {
+      "type": "char(250)",
+      "nullable": true,
+      "identity": false,
+      "default": null,
+      "description": "Campo Comentario de AprobacionComercial"
+    },
+    "EstadoFiscal": {
+      "type": "nchar(10)",
+      "nullable": true,
+      "identity": false,
+      "default": "DEFAULT 1",
+      "description": "Campo EstadoFiscal de AprobacionComercial"
+    },
+    "FechaHoraFirma": {
+      "type": "datetime",
+      "nullable": true,
+      "identity": false,
+      "default": null,
+      "description": "Campo FechaHoraFirma de AprobacionComercial"
+    },
+    "FechaCreacion": {
+      "type": "datetime",
+      "nullable": true,
+      "identity": false,
+      "default": "DEFAULT getdate()",
+      "description": "Campo FechaCreacion de AprobacionComercial"
+    }
+  }
+}

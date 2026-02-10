@@ -1,0 +1,38 @@
+{
+    "archivos_configuracion": {
+        "archivos": [
+            "config.json",
+            "rutas.json"
+        ],
+        "descripcion": "Archivos de configuración específicos por empresa"
+    },
+    "carpetas_con_subcarpetas": {
+        "Bin": {
+            "Servicios": [
+                "Config"
+            ]
+        },
+        "Semillas": [
+            "Firmadas",
+            "Generadas"
+        ],
+        "XML": [
+            "Firmadas",
+            "Generadas"
+        ]
+    },
+    "carpetas_principales": [
+        "Img",
+        "RI",
+        "Token",
+        "Cert",
+        "CSV"
+    ],
+    "estructura_base": "C:/Base/Ambiente",
+    "servicios_archivos": [
+        "FEGeneraryFirmaXMLASESYS.exe",
+        "FEImpresionASESYS.exe",
+        "EnviarArchivosServidorASESYS.exe",
+        "config_print_screen.exe"
+    ]
+}

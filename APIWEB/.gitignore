@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+log_generales/
+data/api*.log
+
+# Database
+*.db
+*.sqlite3
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Certificates (mantener estructura pero no contenido sensible)
+Cert/*.pfx
+Cert/*.key
+Cert/*.pem
+!Cert/.gitkeep
+
+# Configuration files con datos sensibles
+data/config.ini
+data/apikey.json
+
+# Build files
+*.spec
+build/
+dist/
+
+# Query backups (mantener directorio C:\Query\ fuera del repo)
+# Los archivos de queries están en C:\Query\, no en el repositorio

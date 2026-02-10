@@ -1,0 +1,8 @@
+{
+  "type": "view",
+  "name": "vFEEncabezado",
+  "schema": "dbo",
+  "description": "Vista principal del encabezado e-CF para DGII",
+  "execution": "replace",
+  "ddl": "\nCREATE VIEW dbo.vFEEncabezado\nAS\n-- DDL REAL (idéntico al que suministraste, sin USE ni GO)\nWITH\n e AS (\n    SELECT TOP 1 itbisenprecio, TRIM(rnc) AS rnc, ambiente, nota\n    FROM empresa WITH (NOLOCK)\n ),\n AmbienteInfo AS (\n    SELECT TOP 1\n        A.AMBIENTE,\n        A.DESCRIP,\n        ISNULL(A.RUTA, '') AS RUTA\n    FROM FEAmbiente A WITH (NOLOCK)\n    LEFT JOIN e ON A.ambiente = e.ambiente\n    WHERE A.RUTA IS NOT NULL\n ),\n Indicadores AS (\n    SELECT rncemisor, encf,\n        MAX(CASE WHEN IndicadorFacturacion = 0 THEN 1 ELSE 0 END) AS IndicadorMontoGravadoINF,\n        MAX(CASE WHEN IndicadorFacturacion = 1 THEN 1 ELSE 0 END) AS IndicadorMontoGravadoI18,\n        MAX(CASE WHEN IndicadorFacturacion = 2 THEN 1 ELSE 0 END) AS IndicadorMontoGravadoI16,\n        MAX(CASE WHEN IndicadorFacturacion = 3 THEN 1 ELSE 0 END) AS IndicadorMontoGravadoIEX,\n        MAX(CASE WHEN IndicadorFacturacion = 4 THEN 1 ELSE 0 END) AS IndicadorMontoGravadoIE\n    FROM (\n        SELECT rncemisor, encf,\n            CASE\n                WHEN SUBSTRING(encf,2,2)=46 THEN 3\n                WHEN SUBSTRING(encf,2,2)=44 THEN 4\n                ELSE IndicadorFacturacion\n            END AS IndicadorFacturacion\n        FROM vFEDetalle det WITH (NOLOCK)\n    ) x\n    GROUP BY rncemisor, encf\n )\nSELECT\n  enc.*\nFROM dbo.FEEncabezado enc\nLEFT JOIN Indicadores i\n  ON i.encf = enc.encf AND i.rncemisor = enc.rncemisor\nCROSS JOIN AmbienteInfo\n"
+}

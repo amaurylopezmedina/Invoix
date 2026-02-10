@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ECF>
+    <Encabezado>
+        <Version>1.0</Version>
+        <IdDoc>
+            <TipoeCF>31</TipoeCF>
+            <eNCF>E310000000001</eNCF>
+            <FechaVencimientoSecuencia>31-12-2025</FechaVencimientoSecuencia>
+            <IndicadorMontoGravado>1</IndicadorMontoGravado>
+            <IndicadorServicioTodoIncluido>1</IndicadorServicioTodoIncluido>
+            <TipoIngresos>01</TipoIngresos>
+            <TipoPago>2</TipoPago>
+            <FechaLimitePago>15-02-2025</FechaLimitePago>
+            <TerminoPago>30 días</TerminoPago>
+            <TablaFormasPago>
+                <FormaDePago>
+                    <FormaPago>2</FormaPago>
+                    <MontoPago>11800.00</MontoPago>
+                </FormaDePago>
+            </TablaFormasPago>
+            <TipoCuentaPago>CT</TipoCuentaPago>
+            <NumeroCuentaPago>123456789012345</NumeroCuentaPago>
+            <BancoPago>Banco XYZ</BancoPago>
+            <TotalPaginas>1</TotalPaginas>
+        </IdDoc>
+        <Emisor>
+            <RNCEmisor>98765432109</RNCEmisor>
+            <RazonSocialEmisor>Empresa Ejemplo, SRL</RazonSocialEmisor>
+            <NombreComercial>Ejemplo Corp</NombreComercial>
+            <DireccionEmisor>Calle Principal #123, Santo Domingo</DireccionEmisor>
+            <Municipio>010100</Municipio>
+            <Provincia>010000</Provincia>
+            <TablaTelefonoEmisor>
+                <TelefonoEmisor>809-555-1234</TelefonoEmisor>
+            </TablaTelefonoEmisor>
+            <CorreoEmisor>info@ejemplo.com</CorreoEmisor>
+            <WebSite>www.ejemplo.com</WebSite>
+            <ActividadEconomica>Venta de productos</ActividadEconomica>
+            <CodigoVendedor>VEN001</CodigoVendedor>
+            <FechaEmision>31-01-2025</FechaEmision>
+        </Emisor>
+        <Comprador>
+            <RNCComprador>123456789</RNCComprador>
+            <RazonSocialComprador>Cliente Ejemplo, SA</RazonSocialComprador>
+            <ContactoComprador>Juan Pérez</ContactoComprador>
+            <CorreoComprador>juan@cliente.com</CorreoComprador>
+            <DireccionComprador>Av. Principal #456</DireccionComprador>
+            <MunicipioComprador>010100</MunicipioComprador>
+            <ProvinciaComprador>010000</ProvinciaComprador>
+        </Comprador>
+        <Totales>
+            <MontoGravadoTotal>10000.00</MontoGravadoTotal>
+            <MontoGravadoI1>10000.00</MontoGravadoI1>
+            <ITBIS1>18</ITBIS1>
+            <TotalITBIS>1800.00</TotalITBIS>
+            <TotalITBIS1>1800.00</TotalITBIS1>
+            <MontoTotal>11800.00</MontoTotal>
+        </Totales>
+    </Encabezado>
+    <DetallesItems>
+        <Item>
+            <NumeroLinea>1</NumeroLinea>
+            <TablaCodigosItem>
+                <CodigosItem>
+                    <TipoCodigo>Interno</TipoCodigo>
+                    <CodigoItem>PROD001</CodigoItem>
+                </CodigosItem>
+            </TablaCodigosItem>
+            <IndicadorFacturacion>1</IndicadorFacturacion>
+            <NombreItem>Producto Ejemplo 1</NombreItem>
+            <IndicadorBienoServicio>1</IndicadorBienoServicio>
+            <DescripcionItem>Descripción detallada del producto ejemplo 1</DescripcionItem>
+            <CantidadItem>10.00</CantidadItem>
+            <UnidadMedida>43</UnidadMedida>
+            <PrecioUnitarioItem>1000.00</PrecioUnitarioItem>
+            <MontoItem>10000.00</MontoItem>
+        </Item>
+    </DetallesItems>
+    <Subtotales>
+        <Subtotal>
+            <NumeroSubTotal>1</NumeroSubTotal>
+            <DescripcionSubtotal>Subtotal general</DescripcionSubtotal>
+            <Orden>1</Orden>
+            <SubTotalMontoGravadoTotal>10000.00</SubTotalMontoGravadoTotal>
+            <SubTotalMontoGravadoI1>10000.00</SubTotalMontoGravadoI1>
+            <SubTotaITBIS>1800.00</SubTotaITBIS>
+            <SubTotaITBIS1>1800.00</SubTotaITBIS1>
+            <MontoSubTotal>11800.00</MontoSubTotal>
+        </Subtotal>
+    </Subtotales>
+    <InformacionReferencia>
+        <NCFModificado>B0100000001</NCFModificado>
+        <FechaNCFModificado>30-01-2025</FechaNCFModificado>
+        <CodigoModificacion>2</CodigoModificacion>
+        <RazonModificacion>Corrección de datos del comprador</RazonModificacion>
+    </InformacionReferencia>
+    <FechaHoraFirma>31-01-2025 10:30:00</FechaHoraFirma>
+    <Signature>        <!-- Placeholder for digital signature --></Signature>
+</ECF>

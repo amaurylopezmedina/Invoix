@@ -1,0 +1,96 @@
+            <html>
+            <body style="font-family: Arial, sans-serif; font-size: 10pt;">
+                <!-- Company Header and Invoice Information -->
+                <table width="100%" style="margin-bottom: 10px;">
+                    <tr>
+                        <td style="text-align:left; vertical-align:top;">
+                            <h2 style="margin:0;">{self.company_data['nombre_empresa']}</h2>
+                            <p style="margin:0;">{self.company_data['direccion']}<br>
+                            RNC: {self.company_data['rnc']} | Tel.: {self.company_data['telefono']}</p>
+                        </td>
+                        <td style="text-align:right; vertical-align:top;">
+                            <p style="margin:0;">NCF: {self.invoice_data['ncf']}<br>
+                            <strong>FACTURA DE CRÉDITO FISCAL</strong><br>
+                            VÁLIDO HASTA: {self.invoice_data['fVencimientoNCF']}</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:left;">
+                            <p>Cliente: {self.invoice_data['cliente']} - {self.invoice_data['nombre_cliente']}<br>
+                            RNC: {self.invoice_data['cedula']}<br>
+                            Teléfono: {self.invoice_data['telefono_cliente']}<br>
+                            Dirección: {self.invoice_data['direccion_cliente']}</p>
+                        </td>
+                        <td style="text-align:right;">
+                            <p>Factura #: {self.invoice_data['numero']}<br>
+                            Fecha Fact: {self.invoice_data['fecha']}<br>
+                            Vendedor: {self.invoice_data['nombre_vendedor']}<br>
+                            Almacén: {self.invoice_data['almacen']}</p>
+                        </td>
+                    </tr>
+                </table>
+                <hr>
+
+
+                <!-- Product Table Section -->
+                <table width="100%" style="border-collapse: collapse; margin-top: 10px;">
+                    <tr>
+                        <th style="border: 1px solid black; padding: 4px;">Cantidad</th>
+                        <th style="border: 1px solid black; padding: 4px;">Descripción</th>
+                        <th style="border: 1px solid black; padding: 4px;">Precio RD</th>
+                        <th style="border: 1px solid black; padding: 4px;">Desc.</th>
+                        <th style="border: 1px solid black; padding: 4px;">ITBIS</th>
+                        <th style="border: 1px solid black; padding: 4px;">Valor RD</th>
+                    </tr>
+                    {products_html}
+                </table>
+                
+                <!-- Totals Section -->
+                <table width="100%" style="margin-top: 10px;">
+                    <tr>
+                        <td style="text-align:right; font-weight: bold;">
+                            SUB-TOTAL RD:
+                        </td>
+                        <td style="text-align:right; width: 100px;">
+                            {subtotal:.2f}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:right; font-weight: bold;">
+                            - DESCUENTO RD:
+                        </td>
+                        <td style="text-align:right; width: 100px;">
+                            {total_descuento:.2f}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:right; font-weight: bold;">
+                            + ITBIS RD:
+                        </td>
+                        <td style="text-align:right; width: 100px;">
+                            {total_itbis:.2f}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:right; font-weight: bold; font-size: 12pt;">
+                            TOTAL RD:
+                        </td>
+                        <td style="text-align:right; font-weight: bold; font-size: 12pt;">
+                            {total:.2f}
+                        </td>
+                    </tr>
+                </table>
+
+
+                <!-- Footer Section with Notes and Signature Fields -->
+                <p style="margin-top: 10px; font-size: 8pt;">{note}</p>
+                <table width="100%" style="border-collapse: collapse; margin-top: 20px;">
+                    <tr>
+                        <td style="border: 1px solid black; text-align: center; padding: 20px; width: 33%;">Realizado: {realizado}</td>
+                        <td style="border: 1px solid black; text-align: center; padding: 20px; width: 33%;">Despachado</td>
+                        <td style="border: 1px solid black; text-align: center; padding: 20px; width: 33%;">Recibido</td>
+                    </tr>
+                </table>
+            </body>
+            </html>
+        

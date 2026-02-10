@@ -1,0 +1,23 @@
+{
+    "URLBase": "ecf.dgii.gov.do",
+    "URLBaseR": "ecf.dgii.gov.do",
+    "Ambiente": 2,
+    "URLPrueba": "/TesteCF",
+    "URLCertificacion": "/CerteCF",
+    "URLProductivo": "/ecf",
+    "URLAmbienteActivo": "",
+    "URLSemilla": "/Autenticacion/api/Autenticacion/Semilla",
+    "URLToken": "/autenticacion/api/autenticacion/validarsemilla",
+    "URLDocumentosElectronicos": "/Recepcion/api/FacturasElectronicas",
+    "URLDocumentosElectronicosR": "/recepcionfc/api/recepcion/ecf",
+    "URLAnulacion": "/api/operaciones/anularrango",
+    "URLConsultaRFCE": "/api/Consultas/Consulta",
+    "URLConsultaFCE": "/consultaestado/api/consultas/estado",
+    "URLConsultaTrackId": "/api/trackids/consulta",
+    "URLConsultaDirectorioServiciosListado": "/consultadirectorio/api/Consultas/Listado",
+    "URLConsultaDirectorioServiciosRNC": "/consultadirectorio/api/consultas/obtenerdirectorioporrnc",
+    "URLConsultaTimbre": "/consultatimbre",
+    "URLConsultaTimbreRFCE": "/consultatimbrefc",
+    "URLConsultaEstadoServicios": "https://statusecf.dgii.gov.do/api/estatusservicios/obtenerestatus",
+    "URLaprobacionComercial": "/aprobacioncomercial/api/aprobacioncomercial"
+}

@@ -1,0 +1,21 @@
+{
+  "table": "EstadoImpresion",
+  "schema": "dbo",
+  "description": "Tabla EstadoImpresion importada desde SQL",
+  "fields": {
+    "estado": {
+      "type": "int",
+      "nullable": true,
+      "identity": false,
+      "default": "DEFAULT 0",
+      "description": "Campo estado de EstadoImpresion"
+    },
+    "Descrip": {
+      "type": "char(100)",
+      "nullable": true,
+      "identity": false,
+      "default": null,
+      "description": "Campo Descrip de EstadoImpresion"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+SELECT        NumeroLinea, RNCEmisor, TipoECF, eNCF, TipoCodigo1, CodigoItem1, TipoCodigo2, CodigoItem2, TipoCodigo3, CodigoItem3, TipoCodigo4, CodigoItem4, TipoCodigo5, CodigoItem5, IndicadorFacturacion, 
+                         IndicadorAgenteRetencionoPercepcion, MontoITBISRetenido, MontoISRRetenido, NombreItem, IndicadorBienoServicio, DescripcionItem, CantidadItem, UnidadMedida, CantidadReferencia, UnidadReferencia, Subcantidad1, 
+                         CodigoSubcantidad1, Subcantidad2, CodigoSubcantidad2, Subcantidad3, CodigoSubcantidad3, Subcantidad4, CodigoSubcantidad4, Subcantidad5, CodigoSubcantidad5, GradosAlcohol, PrecioUnitarioReferencia, 
+                         FechaElaboracion, FechaVencimientoItem, PesoNetoKilogramo, PesoNetoMineria, TipoAfiliacion, Liquidacion, PrecioUnitarioItem, DescuentoMonto, '$' AS TipoSubDescuento1, SubDescuentoPorcentaje1, MontoSubDescuento1, 
+                         TipoSubDescuento2, SubDescuentoPorcentaje2, MontoSubDescuento2, TipoSubDescuento3, SubDescuentoPorcentaje3, MontoSubDescuento3, TipoSubDescuento4, SubDescuentoPorcentaje4, MontoSubDescuento4, 
+                         TipoSubDescuento5, SubDescuentoPorcentaje5, MontoSubDescuento5, MontoRecargo, TipoSubRecargo1, SubRecargoPorcentaje1, MontoSubRecargo1, TipoSubRecargo2, SubRecargoPorcentaje2, MontoSubRecargo2, 
+                         TipoSubRecargo3, SubRecargoPorcentaje3, MontoSubRecargo3, TipoSubRecargo4, SubRecargoPorcentaje4, MontoSubRecargo4, TipoSubRecargo5, SubRecargoPorcentaje5, MontoSubRecargo5, TipoImpuesto1, TipoImpuesto2, 
+                         PrecioOtraMoneda, DescuentoOtraMoneda, RecargoOtraMoneda, MontoItemOtraMoneda, MontoItem
+FROM            dbo.FEDetalle

@@ -1,0 +1,103 @@
+import os
+import sys
+import time
+import traceback
+
+import portalocker
+import pyodbc
+from sqlalchemy import Column, MetaData, String, Table, create_engine, select, update
+from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import sessionmaker
+
+from config.uGlobalConfig import GConfig
+from db.uDB import ConectarDB
+from glib.log_g import log_event, setup_logger
+from glib.Servicios import *
+from glib.ufe import GenerarYFirmar, UnlockCK, sanitize_for_log
+from glib.uGlobalLib import load_interval_config, mostrarConfiguracion
+
+logger = setup_logger("FEGeneraryFirmaXMLASESYS.log")
+
+
+if __name__ == "__main__":
+    # Evitar que el programa se ejecute mas de una vez
+    ################################################################################################
+    lock_file_path = os.path.join(
+        os.path.dirname(os.path.abspath(__file__)), "FEGeneraryFirmaXMLASESYS.lock"
+    )
+
+    # Abrir el archivo para bloqueo
+    lock_file = open(lock_file_path, "w")
+    try:
+        # Intentar bloquear el archivo de forma exclusiva y no bloqueante
+        portalocker.lock(lock_file, portalocker.LOCK_EX | portalocker.LOCK_NB)
+
+        # Si llegamos aquí, tenemos el bloqueo
+
+        # Escribir el PID para identificación
+        lock_file.write(f"{os.getpid()}")
+        lock_file.flush()
+    except portalocker.LockException:
+        print("¡Ya hay otra instancia del programa en ejecución!")
+        sys.exit(1)
+    ################################################################################################
+
+    UnlockCK()
+    GConfig.cargar(1)
+
+    # Conexión a la base de datos
+    cn1 = ConectarDB()
+    # frame = inspect.currentframe()
+    # archivo = frame.f_code.co_filename
+    mostrarConfiguracion(GConfig, cn1)
+
+    IConfig = load_interval_config()
+    check_interval = IConfig.get("check_interval_GyF", 5)
+    logger.info(f"Intervalo de chequeo configurado: {check_interval} segundos")
+
+    """while True:
+        try:
+            query = f"Select * from vFEEncabezado with (nolock) where EstadoFiscal =1 and Trackid is null and  TipoECFL = 'E' order by fechacreacion"
+            vFEEncabezado = cn1.fetch_query(query)
+            for row in vFEEncabezado:
+                GenerarYFirmar(cn1, row)
+        except Exception as e:
+            log_event(logger, "info", f"Error : {e}")"""
+
+    while True:
+        try:
+            query = """
+                SELECT TOP 50 *
+                FROM vFEEncabezado WITH (NOLOCK)
+                WHERE EstadoFiscal = 1
+                AND TipoECFL = 'E'
+                ORDER BY FechaCreacion
+            """
+
+            cursor = cn1.connection.cursor()
+
+            # Evitar quedarnos esperando bloqueos largos
+            cursor.execute("SET LOCK_TIMEOUT 3000;")  # 3 segundos
+
+            cursor.execute(query)
+
+            row = cursor.fetchone()
+            procesados = 0
+
+            while row:
+                GenerarYFirmar(cn1, row)
+                procesados += 1
+                row = cursor.fetchone()
+
+            cursor.close()
+
+            # Si no había nada → descansar
+            if procesados == 0:
+                time.sleep(check_interval)
+
+        except Exception as e:
+            log_event(
+                logger,
+                "error",
+                f"Error procesando factura: {sanitize_for_log(str(e))}",
+            )

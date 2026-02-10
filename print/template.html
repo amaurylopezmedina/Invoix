@@ -1,0 +1,173 @@
+<html>
+  <body
+    style="
+      font-family: Arial, sans-serif;
+      font-size: 10pt;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      margin-left: 20px;
+      margin-right: 20px;
+    "
+  >
+    <table width="100%" style="margin-bottom: 3px; padding: 0;">
+      <tr>
+        <td style="text-align: left; vertical-align: top; padding: 0;">
+          <h3 style="margin: 0; padding: 0;">{company_name}</h3>
+          <p style="margin: 0; padding: 0;">
+            {company_address}<br />
+            RNC: {company_rnc} | Tel.: {company_phone}
+          </p>
+          <p style="margin: 0; padding: 0;">
+            Cliente: {client}-{client_name}<br />
+            RNC: {client_rnc} Teléfono: {client_phone}<br />
+            Dirección: {client_address}
+          </p>
+        </td>
+        <td style="text-align: right; vertical-align: top; padding: 0;">
+          <div style="text-align: left; display: inline-block;">
+            <p style="margin: 0; padding: 0;">NCF: {invoice_ncf}</p>
+            <p style="margin: 0; padding: 0;">{invoice_ncf_type}</p>
+            <p style="margin: 0; padding: 0;">
+              VÁLIDO HASTA: {invoice_valid_until}
+            </p>
+            <p style="margin: 0; padding: 0;">Factura #: {invoice_number}</p>
+            <p style="margin: 0; padding: 0;">Fecha Fact: {invoice_date}</p>
+            <p style="margin: 0; padding: 0;">Vendedor: {seller_name}</p>
+            <p style="margin: 0; padding: 0;">Almacén: {warehouse}</p>
+          </div>
+        </td>
+      </tr>
+    </table>
+    <hr
+      style="margin: 0; padding: 0; border: none; border-top: 1px solid black;"
+    />
+    <table width="100%" style="border-collapse: collapse; margin-top: 10px;">
+      <tr>
+        <th style="border: 1px solid black; padding: 4px;">Cantidad</th>
+        <th style="border: 1px solid black; padding: 4px;">Descripción</th>
+        <th style="border: 1px solid black; padding: 4px;">Precio RD</th>
+        <th style="border: 1px solid black; padding: 4px;">Desc.</th>
+        <th style="border: 1px solid black; padding: 4px;">ITBIS</th>
+        <th style="border: 1px solid black; padding: 4px;">Valor RD</th>
+      </tr>
+      {products_html}
+    </table>
+
+    <table width="100%" style="margin-top: 3px; padding: 0;">
+      <tr>
+        <td style="text-align: right; width: 300px; padding: 0;">
+          SUB-TOTAL:
+          <span style="display: inline-block; width: 100px; text-align: right;">
+            {subtotal:,.2f}
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td style="text-align: right; width: 300px; padding: 0;">
+          - DESCUENTO:
+          <span style="display: inline-block; width: 100px; text-align: right;">
+            {total_descuento:,.2f}
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td style="text-align: right; width: 300px; padding: 0;">
+          + ITBIS:
+          <span style="display: inline-block; width: 100px; text-align: right;">
+            {total_itbis:,.2f}
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td
+          style="
+            text-align: right;
+            font-weight: bold;
+            font-size: 12pt;
+            width: 300px;
+            padding: 0;
+          "
+        >
+          TOTAL:
+          <span style="display: inline-block; width: 100px; text-align: right;">
+            {total:,.2f}
+          </span>
+        </td>
+      </tr>
+    </table>
+    <p style="margin-top: 3px; font-size: 8pt; padding: 0;">{note}</p>
+    <table
+      width="100%"
+      style="border-collapse: collapse; margin-top: 10px; padding: 0;"
+    >
+      <tr>
+        <!-- Primer Bloque -->
+        <td
+          style="
+            text-align: center;
+            padding: 3px;
+            width: 33%;
+            font-weight: bold;
+            font-size: 16px;
+          "
+        >
+          <span style="font-size: 14px; text-decoration: underline;">
+            {realizado}
+          </span>
+          <hr style="margin: 5px auto; width: 80%; border: 1px solid black;" />
+          Realizado
+        </td>
+
+        <!-- Segundo Bloque -->
+        <td
+          style="
+            text-align: center;
+            padding: 3px;
+            width: 33%;
+            font-weight: bold;
+            font-size: 16px;
+          "
+        >
+          <span style="font-size: 14px; text-decoration: none;">.</span>
+          <hr style="margin: 5px auto; width: 80%; border: 1px solid black;" />
+          Despachado
+        </td>
+
+        <!-- Tercer Bloque -->
+        <td
+          style="
+            text-align: center;
+            padding: 3px;
+            width: 33%;
+            font-weight: bold;
+            font-size: 16px;
+          "
+        >
+          <span style="font-size: 14px; text-decoration: none;">.</span>
+          <hr style="margin: 5px auto; width: 80%; border: 1px solid black;" />
+          Recibido
+        </td>
+      </tr>
+    </table>
+
+    <div style="text-align: left; margin-top: 10px; padding: 0;">
+      <img
+        src="{qr_image}"
+        alt="QR Code"
+        style="
+          width: 25px;
+          height: 25px;
+          float: left;
+          margin-right: 1px;
+          padding: 0;
+        "
+      />
+      <span style="padding: 0;"
+        >Código de Seguridad: {invoice_security_code}</span
+      ><br />
+      <span style="padding: 0;"
+        >Fecha de Firma Digital: {invoice_signature_date}</span
+      >
+    </div>
+  </body>
+</html>

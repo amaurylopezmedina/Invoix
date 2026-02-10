@@ -1,0 +1,42 @@
+[
+  {
+    "script": "FEConsultaEstadoECF.py",
+    "nombre": null,
+    "icono": null
+  },
+  {
+    "script": "FEEnvioASESYS.py",
+    "nombre": null,
+    "icono": null
+  },
+  {
+    "script": "FEGeneraryFirmaXMLASESYS.py",
+    "nombre": null,
+    "icono": null
+  },
+  {
+    "script": "FEImpresionASESYS.py",
+    "nombre": null,
+    "icono": null
+  },
+  {
+    "script": "FEServicioResumenECF.py",
+    "nombre": null,
+    "icono": null
+  },
+  {
+    "script": "FEEnvioCorreoECFConfig.py",
+    "nombre": null,
+    "icono": null
+  },
+  {
+    "script": "ipre.py",
+    "nombre": null,
+    "icono": null
+  },
+  {
+    "script": "monitor/run.py",
+    "nombre": "Monitor",
+    "icono": null
+  }
+]

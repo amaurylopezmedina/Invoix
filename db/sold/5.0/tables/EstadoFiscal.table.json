@@ -1,0 +1,21 @@
+{
+  "table": "EstadoFiscal",
+  "schema": "dbo",
+  "description": "Tabla EstadoFiscal importada desde SQL",
+  "fields": {
+    "estado": {
+      "type": "int",
+      "nullable": true,
+      "identity": false,
+      "default": null,
+      "description": "Campo estado de EstadoFiscal"
+    },
+    "Descrip": {
+      "type": "char(100)",
+      "nullable": true,
+      "identity": false,
+      "default": null,
+      "description": "Campo Descrip de EstadoFiscal"
+    }
+  }
+}

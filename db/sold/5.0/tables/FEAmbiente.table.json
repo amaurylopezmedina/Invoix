@@ -1,0 +1,13 @@
+{
+  "schema": "dbo",
+  "table": "NuevaTabla",
+  "description": "Descripción de la tabla (no afecta DDL)",
+  "fields": {
+    "Id": {
+      "type": "int",
+      "nullable": false,
+      "identity": true,
+      "description": "Clave primaria"
+    }
+  }
+}

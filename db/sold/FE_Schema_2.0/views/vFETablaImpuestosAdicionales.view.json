@@ -1,0 +1,8 @@
+{
+  "type": "view",
+  "name": "vFETablaImpuestosAdicionales",
+  "schema": "dbo",
+  "description": "Vista placeholder de impuestos adicionales DGII",
+  "execution": "replace",
+  "ddl": "\nCREATE VIEW dbo.vFETablaImpuestosAdicionales\nAS\nSELECT\n  det.TipoECF,\n  det.eNCF,\n  det.RNCEmisor,\n  NULL AS TipoImpuesto,\n  NULL AS TasaImpuestoAdicional,\n  NULL AS MontoImpuestoSelectivoConsumoEspecifico,\n  NULL AS MontoImpuestoSelectivoConsumoAdvalorem,\n  NULL AS OtrosImpuestosAdicionales\nFROM FEDetalle det\nWHERE 0 = 1\n"
+}

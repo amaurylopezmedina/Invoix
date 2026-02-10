@@ -1,0 +1,63 @@
+{
+  "table": "FEToken",
+  "schema": "dbo",
+  "description": "Tabla FEToken importada desde SQL",
+  "fields": {
+    "FileToken": {
+      "type": "varchar(250)",
+      "nullable": true,
+      "identity": false,
+      "default": null,
+      "description": "Campo FileToken de FEToken"
+    },
+    "compania": {
+      "type": "int",
+      "nullable": true,
+      "identity": false,
+      "default": null,
+      "description": "Campo compania de FEToken"
+    },
+    "Expedido": {
+      "type": "datetime",
+      "nullable": true,
+      "identity": false,
+      "default": null,
+      "description": "Campo Expedido de FEToken"
+    },
+    "expira": {
+      "type": "datetime",
+      "nullable": true,
+      "identity": false,
+      "default": null,
+      "description": "Campo expira de FEToken"
+    },
+    "SemillaFirmada": {
+      "type": "varchar(250)",
+      "nullable": true,
+      "identity": false,
+      "default": null,
+      "description": "Campo SemillaFirmada de FEToken"
+    },
+    "token": {
+      "type": "varchar(max)",
+      "nullable": true,
+      "identity": false,
+      "default": null,
+      "description": "Campo token de FEToken"
+    },
+    "ambiente": {
+      "type": "int",
+      "nullable": true,
+      "identity": false,
+      "default": null,
+      "description": "Campo ambiente de FEToken"
+    },
+    "rnc": {
+      "type": "char(20)",
+      "nullable": true,
+      "identity": false,
+      "default": null,
+      "description": "Campo rnc de FEToken"
+    }
+  }
+}

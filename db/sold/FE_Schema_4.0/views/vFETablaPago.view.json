@@ -1,0 +1,8 @@
+{
+  "type": "view",
+  "name": "vFETablaPago",
+  "schema": "dbo",
+  "description": "Vista normalizada de pagos del e-CF",
+  "execution": "replace",
+  "ddl": "\nCREATE VIEW dbo.vFETablaPago\nAS\nSELECT NumeroFacturaInterna, SUBSTRING(eNCF,1,1) AS TipoECFL, RNCEmisor, TipoECF, eNCF,\n       FormaPago1 AS FormaPago, MontoPago1 AS MontoPago\nFROM FEEncabezado WHERE FormaPago1 IS NOT NULL\nUNION ALL\nSELECT NumeroFacturaInterna, SUBSTRING(eNCF,1,1), RNCEmisor, TipoECF, eNCF,\n       FormaPago2, MontoPago2\nFROM FEEncabezado WHERE FormaPago2 IS NOT NULL\n"
+}

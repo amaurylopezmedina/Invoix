@@ -1,0 +1,35 @@
+{
+  "table": "ITBISDGII",
+  "schema": "dbo",
+  "description": "Tabla ITBISDGII importada desde SQL",
+  "fields": {
+    "codigo": {
+      "type": "int",
+      "nullable": true,
+      "identity": false,
+      "default": null,
+      "description": "Campo codigo de ITBISDGII"
+    },
+    "Descri": {
+      "type": "char(100)",
+      "nullable": true,
+      "identity": false,
+      "default": null,
+      "description": "Campo Descri de ITBISDGII"
+    },
+    "tasa": {
+      "type": "numeric(18,4)",
+      "nullable": true,
+      "identity": false,
+      "default": null,
+      "description": "Campo tasa de ITBISDGII"
+    },
+    "Siglas": {
+      "type": "char(5)",
+      "nullable": true,
+      "identity": false,
+      "default": null,
+      "description": "Campo Siglas de ITBISDGII"
+    }
+  }
+}

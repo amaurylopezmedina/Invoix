@@ -1,0 +1,15 @@
+{
+  "default": "default",
+  "profiles": {
+    "default": {
+      "DBMS": "ODBC Driver 17 for SQL Server",
+      "Servidor": ".",
+      "Puerto": 1433,
+      "DB": "bscodeca01",
+      "Usuario": "sistema",
+      "Contrasena": "@@sistema",
+      "AutenticacionUsuario": false,
+      "UltimaConexionExitosa": "2025-10-04 23:11:12"
+    }
+  }
+}

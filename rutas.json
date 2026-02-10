@@ -1,0 +1,30 @@
+{
+  "131709745": {
+    "Empresa": {
+      "Nombre": "ASESYS",
+      "RNC": "131709745"
+    },
+    "carpetas": {
+      "RutaBase": "C:/xmlvalidar/",
+      "RutaCertificado": "cert/cert.p12",
+      "ClaveCertificado": "",
+      "RutaSemilla": "/semillas/",
+      "RutaToken": "/token/",
+      "RutaXML": "/xml/"
+    }
+  },
+  "130221792": {
+    "Empresa": {
+      "Nombre": "CODECA",
+      "RNC": "130221792"
+    },
+    "carpetas": {
+      "RutaBase": "C:/xmlvalidar/",
+      "RutaCertificado": "cert/cert.p12",
+      "ClaveCertificado": "Sistema01",
+      "RutaSemilla": "/semillas/",
+      "RutaToken": "/token/",
+      "RutaXML": "/xml/"
+    }
+  }
+}

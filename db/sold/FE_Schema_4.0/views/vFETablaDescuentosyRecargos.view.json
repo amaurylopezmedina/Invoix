@@ -1,0 +1,8 @@
+{
+  "type": "view",
+  "name": "vFETablaDescuentosyRecargos",
+  "schema": "dbo",
+  "description": "Vista placeholder de descuentos y recargos DGII",
+  "execution": "replace",
+  "ddl": "\nCREATE VIEW dbo.vFETablaDescuentosyRecargos\nAS\nSELECT\n  det.TipoECF,\n  det.eNCF,\n  det.RNCEmisor,\n  1 AS NumeroLineaDoR,\n  'D' AS TipoAjuste\nFROM FEDetalle det\nWHERE 0 = 1\n"
+}

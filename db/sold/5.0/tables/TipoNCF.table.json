@@ -1,0 +1,21 @@
+{
+  "table": "TipoNCF",
+  "schema": "dbo",
+  "description": "Tabla TipoNCF importada desde SQL",
+  "fields": {
+    "codigo": {
+      "type": "char(2)",
+      "nullable": true,
+      "identity": false,
+      "default": null,
+      "description": "Campo codigo de TipoNCF"
+    },
+    "descripcion": {
+      "type": "nchar(255)",
+      "nullable": true,
+      "identity": false,
+      "default": null,
+      "description": "Campo descripcion de TipoNCF"
+    }
+  }
+}

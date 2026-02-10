@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ACECF xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="ACECF v.1.0.xsd">
+    <DetalleAprobacionComercial>
+        <!-- Required version, must be "1.0" -->
+        <Version>1.0</Version>
+        
+        <!-- RNC Emisor (tax ID of issuer) - 11 digits -->
+        <RNCEmisor>12345678901</RNCEmisor>
+        
+        <!-- eNCF (electronic fiscal number) - must be 9, 11 or 13 alphanumeric characters -->
+        <eNCF>E310000000001</eNCF>
+        
+        <!-- Emission date in DD-MM-YYYY format -->
+        <FechaEmision>15-02-2025</FechaEmision>
+        
+        <!-- Total amount with exactly 2 decimal places -->
+        <MontoTotal>1234567.89</MontoTotal>
+        
+        <!-- RNC Comprador (tax ID of buyer) - 9 digits -->
+        <RNCComprador>123456789</RNCComprador>
+        
+        <!-- Status: 1 = Accepted, 2 = Rejected -->
+        <Estado>2</Estado>
+        
+        <!-- Optional: Reason for rejection (only required if Estado = 2) -->
+        <DetalleMotivoRechazo>El monto total no coincide con el desglose de items</DetalleMotivoRechazo>
+        
+        <!-- Approval date and time in DD-MM-YYYY HH:MM:SS format -->
+        <FechaHoraAprobacionComercial>15-02-2025 14:30:45</FechaHoraAprobacionComercial>
+    </DetalleAprobacionComercial>
+    
+    <!-- Optional: Any additional content can go here -->
+    <InformacionAdicional>
+        <Comentario>Este es un ejemplo de contenido adicional opcional</Comentario>
+    </InformacionAdicional>
+</ACECF>

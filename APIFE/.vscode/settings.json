@@ -1,0 +1,16 @@
+{
+  "python.analysis.typeCheckingMode": "off",
+  "python.analysis.diagnosticSeverityOverrides": {
+    "reportMissingImports": "none",
+    "reportUndefinedVariable": "none",
+    "reportUnboundVariable": "none",
+    "reportImportCycles": "none",
+    "reportMissingTypeStubs": "none",
+    "reportUnknownMemberType": "none",
+    "reportUnknownArgumentType": "none",
+    "reportUnknownLambdaType": "none",
+    "reportUnknownVariableType": "none"
+  },
+  "python.analysis.includeFileSpecs": ["**/*.py"],
+  "python.analysis.exclude": ["**/node_modules", "**/__pycache__"]
+}

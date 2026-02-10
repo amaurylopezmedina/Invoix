@@ -1,0 +1,10 @@
+{
+  "dialect": "mssql+pyodbc",
+  "username": "sistema",
+  "password": "@@sistema",
+  "server": ".",
+  "database": "import",
+  "driver": "ODBC Driver 17 for SQL Server",
+  "trusted_connection": false,
+  "query": {}
+}

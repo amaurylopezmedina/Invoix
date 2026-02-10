@@ -1,0 +1,10 @@
+{
+  "server": "localhost",
+  "database": "ImportarFE",
+  "user": "SISTEMA",
+  "password": "@@sistema",
+  "table_encabezado": "FEEncabezado",
+  "table_detalle_prefix": "FEDetalle",
+  "driver": "ODBC Driver 17 for SQL Server",
+  "validate_duplicates": true
+}

@@ -1,0 +1,37 @@
+# APIWEB - API de Facturación Electrónica FEDGII
+# Dependencias Python
+
+# Framework Web
+flask>=2.3.0
+flask-cors>=4.0.0
+
+# Server ASGI
+uvicorn[standard]>=0.27.0
+starlette>=0.36.0
+
+# Autenticación y Seguridad
+PyJWT>=2.8.0
+passlib>=1.7.4
+cryptography>=41.0.0
+
+# Base de Datos
+pyodbc>=5.0.0
+SQLAlchemy>=2.0.0
+
+# Procesamiento de Archivos
+python-multipart>=0.0.6
+werkzeug>=3.0.0
+pandas>=2.0.0
+openpyxl>=3.1.0
+
+# Tareas Programadas
+APScheduler>=3.10.0
+
+# Validación y Modelos
+pydantic>=2.5.0
+
+# Interfaz Gráfica (para algunos módulos)
+PyQt5>=5.15.0
+
+# Utilidades
+python-dateutil>=2.8.0

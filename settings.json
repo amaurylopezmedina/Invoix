@@ -1,0 +1,25 @@
+{
+    "distpath": "dist",
+    "scripts": [
+        {
+            "file": "FEGeneraryFirmaXMLASESYS.py",
+            "icon": null
+        },
+        {
+            "file": "FEEnvioASESYS.py",
+            "icon": null
+        },
+        {
+            "file": "FEConsultaEstadoECF.py",
+            "icon": null
+        },
+        {
+            "file": "FEImpresionASESYS.py",
+            "icon": null
+        },
+        {
+            "file": "ipre.py",
+            "icon": null
+        }
+    ]
+}

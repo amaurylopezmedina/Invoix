@@ -1,0 +1,22 @@
+01-vFEVentaRD.sql
+02-vFEVentaUS.sql
+03-vFEDevCORD.sql
+04-vFEDevCOUS.sql
+05-vFEDevCRRD.sql
+06-vFEDevCRUS.sql
+Actualiza IDFE.sql
+lista.txt
+vFEDevCORD.sql
+vFEDevCOUS.sql
+vFEEncabezado-ENCF47.sql
+VFEEncabezado.sql
+vFEEncabezadoCajachica.sql
+vFEEncabezadoCXCMovi1Debito.sql
+vFEEncabezadoCXCMovi1Devolucion.sql
+vFEEncabezadoCXCMovi1Directa.sql
+vFEEncabezadoCXCMovi2Debito.sql
+vFEEncabezadoCXCMovi2Devolucion.sql
+vFEEncabezadoCXCMovi2Directa.sql
+VFEEncabezadoCXCMovi2old.sql
+vFEEncabezadoCXPMovi1.sql
+vFEEncabezadoTransa01.sql

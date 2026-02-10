@@ -1,0 +1,63 @@
+{
+  "table": "EmpresaFE",
+  "schema": "dbo",
+  "description": "Empresas habilitadas para facturación electrónica DGII",
+  "primary_key": [
+    "Id"
+  ],
+  "fields": {
+    "Id": {
+      "type": "int",
+      "identity": true,
+      "nullable": false,
+      "description": "PK"
+    },
+    "RNC": {
+      "type": "varchar",
+      "length": 20,
+      "nullable": false,
+      "description": "RNC"
+    },
+    "NombreComercial": {
+      "type": "varchar",
+      "length": 100,
+      "nullable": false,
+      "description": "Nombre comercial"
+    },
+    "RazonSocial": {
+      "type": "varchar",
+      "length": 100,
+      "nullable": false,
+      "description": "Razón social"
+    },
+    "Valido": {
+      "type": "bit",
+      "nullable": false,
+      "default": 1,
+      "description": "Empresa válida"
+    },
+    "created_at": {
+      "type": "datetime",
+      "nullable": true,
+      "description": "Fecha creación"
+    },
+    "clave_portal_cert": {
+      "type": "nvarchar",
+      "length": 255,
+      "nullable": true,
+      "description": "Clave portal cert"
+    },
+    "clave_certificado": {
+      "type": "nvarchar",
+      "length": 255,
+      "nullable": true,
+      "description": "Clave certificado"
+    },
+    "enlace_renovacion_certificado": {
+      "type": "nvarchar",
+      "length": 500,
+      "nullable": true,
+      "description": "URL renovación"
+    }
+  }
+}
